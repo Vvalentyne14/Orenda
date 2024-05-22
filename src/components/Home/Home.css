@@ -1,0 +1,9 @@
+.home_container{
+    background-color: #FFF1F1;
+    display: flex;
+    justify-content: center;
+}
+
+.home_wrapper{
+    width: 100%;
+}
