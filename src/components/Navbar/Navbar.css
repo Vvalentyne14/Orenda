@@ -30,7 +30,11 @@
 .contact button {
     background-color: white;
     outline: none;
+<<<<<<< HEAD
     padding: .5em 1em;
+=======
+    padding: .5em 1.5em;
+>>>>>>> a7e7851e7937998a94fcbadb2599993c01cdc7e9
     font-size: 1rem;
     border-radius: 1.5em;
     cursor: pointer;
@@ -39,9 +43,12 @@
     color: #2E0086;
     border: 1px solid #2E0086;
     font-family: 'open sans';
+<<<<<<< HEAD
     transition: background-color 0.3s, color 0.3s;
 }
 .contact button:hover {
   color: #fff;
   background-color: #2E0086;
+=======
+>>>>>>> a7e7851e7937998a94fcbadb2599993c01cdc7e9
 }
