@@ -3,6 +3,10 @@
   src: url(../../../fonts/OggText-Extrabold-BF646c18fc56511.otf);
 }
 
+.hero-container{
+  margin-bottom: 7em;
+}
+
 .hero-wrapper {
   display: flex;
   justify-content: space-between;
@@ -28,7 +32,7 @@
 .hero-content button {
   background-color: white;
   outline: none;
-  padding: 0.5em 1.5em;
+  padding: .4em .9em;
   font-size: 1rem;
   border-radius: 1.5em;
   cursor: pointer;
@@ -38,6 +42,10 @@
   border: 1px solid #2e0086;
   font-family: "open sans";
   margin-bottom: 2em;
+}
+.hero-content button:hover {
+  background-color: #2e0086;
+  color: #fff;
 }
 .hero-wrapper img {
   width: 572px;
