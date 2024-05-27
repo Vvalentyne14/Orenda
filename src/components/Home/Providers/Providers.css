@@ -1,0 +1,104 @@
+.providers_wrapper{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prov_head{
+    display: flex;
+    float: right;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.cards p{
+    font-size: 11px;
+}
+h4 {
+    font-size: 12px;
+}
+h3{
+    font-size: 16px;
+}
+.text-style {
+    color: #6A6A6A;
+    font-weight: 500;
+}
+
+
+.prov_card {
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    width: 220px;
+}
+.prov_card img {
+    position: relative;
+    object-fit: scale-down;
+    width: 100%;
+}
+
+.prov_card_prop {
+    padding: 10px 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+}
+
+.card_details {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    font-family: 'DM sans';
+}
+
+.prov_card_prop >  .details1{
+    background-color: #F5F5F5;
+    padding: 7px;
+    border-radius: 5px;
+}
+.card_details .details1 p span{
+    font-family: 'open sans';
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.options button {
+    background-color: #2e0086;
+    outline: none;
+    padding: .4em .9em;
+    font-size: 11px;
+    border-radius: 1.5em;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+    color: #fff;
+    border: 1px solid #2e0086;
+    font-family: "open sans";
+    
+}
+.options > div {
+    background: #E1EEE4;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    padding: 4px;
+    font-size: 10px;
+    font-family: 'DM sans';
+    color: #0C3318;
+}
