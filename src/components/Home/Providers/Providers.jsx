@@ -83,6 +83,16 @@ const Providers = () => {
                 <button>Book online</button>
               </div>
             </div>
+            <div className="hover_details">
+              <h3>About Provider</h3>
+              <p>
+                I am a board certified and experienced adult psychiatric and
+                mental health nurse practitioner currently practicing at Orenda
+                Psychiatry. I specialize in helping patients with anxi...
+              </p>
+              <button>Book online</button>
+              <a href="">More info</a>
+            </div>
           </div>
           <div className="prov_card">
             <div className="card_img">
@@ -109,6 +119,16 @@ const Providers = () => {
                 <div>Available Today</div>
                 <button>Book online</button>
               </div>
+            </div>
+            <div className="hover_details">
+              <h3>About Provider</h3>
+              <p>
+                I am a board certified and experienced adult psychiatric and
+                mental health nurse practitioner currently practicing at Orenda
+                Psychiatry. I specialize in helping patients with anxi...
+              </p>
+              <button>Book online</button>
+              <a href="">More info</a>
             </div>
           </div>
           <div className="prov_card">
@@ -137,6 +157,16 @@ const Providers = () => {
                 <button>Book online</button>
               </div>
             </div>
+            <div className="hover_details">
+              <h3>About Provider</h3>
+              <p>
+                I am a board certified and experienced adult psychiatric and
+                mental health nurse practitioner currently practicing at Orenda
+                Psychiatry. I specialize in helping patients with anxi...
+              </p>
+              <button>Book online</button>
+              <a href="">More info</a>
+            </div>
           </div>
           <div className="prov_card">
             <div className="card_img">
@@ -163,6 +193,16 @@ const Providers = () => {
                 <div>Available Today</div>
                 <button>Book online</button>
               </div>
+            </div>
+            <div className="hover_details">
+              <h3>About Provider</h3>
+              <p>
+                I am a board certified and experienced adult psychiatric and
+                mental health nurse practitioner currently practicing at Orenda
+                Psychiatry. I specialize in helping patients with anxi...
+              </p>
+              <button>Book online</button>
+              <a href="">More info</a>
             </div>
           </div>
           <div className="prov_card">
@@ -191,6 +231,16 @@ const Providers = () => {
                 <button>Book online</button>
               </div>
             </div>
+            <div className="hover_details">
+              <h3>About Provider</h3>
+              <p>
+                I am a board certified and experienced adult psychiatric and
+                mental health nurse practitioner currently practicing at Orenda
+                Psychiatry. I specialize in helping patients with anxi...
+              </p>
+              <button>Book online</button>
+              <a href="">More info</a>
+            </div>
           </div>
           <div className="prov_card">
             <div className="card_img">
@@ -217,6 +267,16 @@ const Providers = () => {
                 <div>Available Today</div>
                 <button>Book online</button>
               </div>
+            </div>
+            <div className="hover_details">
+              <h3>About Provider</h3>
+              <p>
+                I am a board certified and experienced adult psychiatric and
+                mental health nurse practitioner currently practicing at Orenda
+                Psychiatry. I specialize in helping patients with anxi...
+              </p>
+              <button>Book online</button>
+              <a href="">More info</a>
             </div>
           </div>
           <div className="prov_card">
@@ -245,6 +305,16 @@ const Providers = () => {
                 <button>Book online</button>
               </div>
             </div>
+            <div className="hover_details">
+              <h3>About Provider</h3>
+              <p>
+                I am a board certified and experienced adult psychiatric and
+                mental health nurse practitioner currently practicing at Orenda
+                Psychiatry. I specialize in helping patients with anxi...
+              </p>
+              <button>Book online</button>
+              <a href="">More info</a>
+            </div>
           </div>
           <div className="prov_card">
             <div className="card_img">
@@ -272,6 +342,16 @@ const Providers = () => {
                 <button>Book online</button>
               </div>
             </div>
+            <div className="hover_details">
+              <h3>About Provider</h3>
+              <p>
+                I am a board certified and experienced adult psychiatric and
+                mental health nurse practitioner currently practicing at Orenda
+                Psychiatry. I specialize in helping patients with anxi...
+              </p>
+              <button>Book online</button>
+              <a href="">More info</a>
+            </div>
           </div>
           <div className="prov_card">
             <div className="card_img">
@@ -298,6 +378,16 @@ const Providers = () => {
                 <div>Available Today</div>
                 <button>Book online</button>
               </div>
+            </div>
+            <div className="hover_details">
+              <h3>About Provider</h3>
+              <p>
+                I am a board certified and experienced adult psychiatric and
+                mental health nurse practitioner currently practicing at Orenda
+                Psychiatry. I specialize in helping patients with anxi...
+              </p>
+              <button>Book online</button>
+              <a href="">More info</a>
             </div>
           </div>
         </div>

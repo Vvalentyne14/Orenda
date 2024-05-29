@@ -23,7 +23,7 @@
   padding-right: 9em;
 }
 
-.header {
+.header h3{
   justify-content: center;
   display: flex;
   font-family: OggBold;

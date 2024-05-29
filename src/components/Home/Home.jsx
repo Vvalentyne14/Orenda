@@ -4,6 +4,8 @@ import Navbar from '../Navbar/Navbar'
 import Hero from './Hero/Hero'
 import Network from '../Network/Network'
 import Providers from './Providers/Providers'
+import Meet from './Meet/Meet'
+import Treat from './Treat/Treat'
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
             <Hero/>
             <Network/>
             <Providers/>
+            <Meet/>
+            <Treat/>
         </div>
     </div>
   )

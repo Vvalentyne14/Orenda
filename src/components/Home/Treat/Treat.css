@@ -1,0 +1,19 @@
+@font-face {
+  font-family: OggExtraBold;
+  src: url(../../../fonts/OggText-Extrabold-BF646c18fc56511.otf);
+}
+
+.treat-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 5em;
+}
+
+.treat-wrapper h1 {
+  font-family: OggExtraBold;
+}
+.treat-wrapper p {
+  font-family: "DM sans";
+}
