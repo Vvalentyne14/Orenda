@@ -1,5 +1,5 @@
 import React from "react";
-import Style from '../Network/Network.module.css'
+import Style from "../Network/Network.module.css";
 import Marquee from "react-fast-marquee";
 import metro from "../../assets/metro.png";
 import emblem from "../../assets/emblem.png";
@@ -9,7 +9,6 @@ import united from "../../assets/united.png";
 import oscar from "../../assets/oscar.png";
 import aetna from "../../assets/aetna.png";
 
-
 const Network = () => {
   return (
     <div className={Style.network_container}>
@@ -18,21 +17,17 @@ const Network = () => {
           <h3>In network with</h3>
         </div>
         <div className={Style.slider}>
-        <Marquee
-                    className={Style.marquee_main}
-                    play={true}
-                    speed={150}
-                >
-                    <img src={united} alt="" />
-                    <img src={aetna} alt="" />
-                    <img src={oscar} alt="" />
-                    <img src={united} alt="" />
-                    <img src={aetna} alt="" />
-                    <img src={oscar} alt="" />
-                    <img src={united} alt="" />
-                    <img src={aetna} alt="" />
-                    <img src={oscar} alt="" />
-            </Marquee>
+          <Marquee className={Style.marquee_main} play={true} speed={150}>
+            <img src={united} alt="" />
+            <img src={aetna} alt="" />
+            <img src={oscar} alt="" />
+            <img src={united} alt="" />
+            <img src={aetna} alt="" />
+            <img src={oscar} alt="" />
+            <img src={united} alt="" />
+            <img src={aetna} alt="" />
+            <img src={oscar} alt="" />
+          </Marquee>
         </div>
         <div className={Style.texts}>
           <h4>Out of network</h4>
@@ -43,7 +38,6 @@ const Network = () => {
           <img src={cms} alt="" />
           <img src={ghi} alt="" />
         </div>
-        <div className={Style.text}>Check to see if you are in network. <a href=""> click Here</a></div>
       </div>
     </div>
   );

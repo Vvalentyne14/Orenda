@@ -31,7 +31,7 @@ const Hero = () => {
             <div className="items-left">
               <div className="items-left-contents">
                 <div className="items-left-img">
-                  <p>14k <img src={plus} alt="" style={{ width: 15 }}/></p>
+                  <p>16k <img src={plus} alt="" style={{ width: 15 }}/></p>
                 </div>
                 <img src={user} alt="" style={{ width: 45 }} />
               </div>
