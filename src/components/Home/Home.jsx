@@ -10,6 +10,8 @@ import Available from './Available/Available'
 import Handle from './Handle/Handle'
 import Journey from './Journey/Journey'
 // import Hear from './Hear/Hear'
+import Location from './Location/Location'
+import FAQ from './FAQ/FAQ'
 
 const Home = () => {
   return (
@@ -25,6 +27,8 @@ const Home = () => {
             <Available/>
             {/* <Hear/> */}
             <Journey/>
+            <Location/>
+            <FAQ/>
         </div>
     </div>
   )

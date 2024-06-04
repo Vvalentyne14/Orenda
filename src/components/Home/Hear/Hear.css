@@ -1,5 +1,4 @@
-@import "swiper/swiper-bundle.min.css";
-@import "swiper/swiper.min.css";
+/* 
 
 @font-face {
   font-family: OggExtraBold;
@@ -8,7 +7,7 @@
 
 
 
-/* Additional custom styles */
+
 .swiper-container {
   position: relative;
 }
@@ -40,9 +39,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .hear-wrapper h1 {
   font-family: OggExtraBold;
   font-weight: 700;
   font-size: 38px;
-}
+} */

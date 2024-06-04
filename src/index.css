@@ -1,9 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-<<<<<<< HEAD
-  cursor: auto;
-=======
   cursor: pointer;
->>>>>>> a7e7851e7937998a94fcbadb2599993c01cdc7e9
 }
 
 html *, html *::before, html *::after {

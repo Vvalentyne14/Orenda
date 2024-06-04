@@ -3,6 +3,11 @@ import "./Journey.css";
 import video from "../../../assets/video.png";
 import support from "../../../assets/support.png";
 import booking from "../../../assets/booking.png";
+import undraw from "../../../assets/undraw.png";
+import call from "../../../assets/call.png";
+import text from "../../../assets/text.png";
+import mail from "../../../assets/mail.png";
+import callpurple from "../../../assets/callpurple.png";
 
 const Journey = () => {
   return (
@@ -39,6 +44,32 @@ const Journey = () => {
           </div>
         </div>
         <hr />
+        <div className="patient">
+          <div className="new-patient">
+            <img src={undraw} alt="" />
+            <h2>New Patient?</h2>
+            <p>To schedule your first appointment;</p>
+            <button className="one">
+              <img src={callpurple} alt=""  className="color-img"/>
+              Call
+            </button>
+            <button className="two">Book Online</button>
+          </div>
+          <div className="existing-patient">
+            <h2>Existing patient?</h2>
+            <p>To schedule a follow-up appointment;</p>
+            <button className="call">
+              <img src={call} alt="" />
+              Call
+            </button>
+            <button className="text">
+              Text <img src={text} alt="" />
+            </button>
+            <button className="mail">
+              Email <img src={mail} alt="" />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

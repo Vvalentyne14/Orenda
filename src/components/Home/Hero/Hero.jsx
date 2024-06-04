@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="hero-wrapper">
         <div className="hero-content">
           <div className="texts">
-            <h1>
+            <h1 className="text-white bg-red-500">
               Online Psychiatry Practice Prescription Management and Talk
               Therapy
             </h1>
