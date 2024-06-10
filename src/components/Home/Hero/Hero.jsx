@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="hero-wrapper">
         <div className="hero-content">
           <div className="texts">
-            <h1 className="">
+            <h1 className=" ">
               Online Psychiatry Practice Prescription Management and Talk
               Therapy
             </h1>
@@ -39,7 +39,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <img src={washpark} alt="" />
+        <div className="washpark"><img src={washpark} alt=""  className="w-full h-full"/></div>
       </div>
     </div>
   );

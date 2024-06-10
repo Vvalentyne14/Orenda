@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div className="home_container">
         <div className="home_wrapper">
-            <Navbar/>
+            {/* <Navbar/> */}
             <Hero/>
             <Network/>
             <Providers/>

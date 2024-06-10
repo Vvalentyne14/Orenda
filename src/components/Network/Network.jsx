@@ -8,6 +8,11 @@ import ghi from "../../assets/ghi.png";
 import united from "../../assets/united.png";
 import oscar from "../../assets/oscar.png";
 import aetna from "../../assets/aetna.png";
+import cigna from "../../assets/cigna.png";
+import anthem from "../../assets/anthem.png";
+import tricare from "../../assets/tricare.png";
+import compsych from "../../assets/compsych.png";
+import multiplan from "../../assets/multiplan.png";
 
 const Network = () => {
   return (
@@ -21,11 +26,11 @@ const Network = () => {
             <img src={united} alt="" />
             <img src={aetna} alt="" />
             <img src={oscar} alt="" />
-            <img src={united} alt="" />
-            <img src={aetna} alt="" />
-            <img src={oscar} alt="" />
-            <img src={united} alt="" />
-            <img src={aetna} alt="" />
+            <img src={cigna} alt="" />
+            <img src={anthem} alt="" />
+            <img src={compsych} alt="" />
+            <img src={tricare} alt="" />
+            <img src={multiplan} alt="" />
             <img src={oscar} alt="" />
           </Marquee>
         </div>
