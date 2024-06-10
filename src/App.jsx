@@ -3,13 +3,16 @@ import { useState } from 'react'
 import './App.css'
 import Home from './components/Home/Home'
 import PrivacyPolicy from './components/Privacy/PrivacyPolicy'
+import Blog from './components/Blog/Bloginfo'
+
 
 function App() {
   return (
-    <div className="container">
+    <div className="">
       <div className="wrapper">
-        {/* <Home/> */}
+        <Home/>
         <PrivacyPolicy/>
+        <Blog/>
       </div>
     </div>
   )

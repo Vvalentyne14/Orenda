@@ -9,7 +9,7 @@ import Treat from './Treat/Treat'
 import Available from './Available/Available'
 import Handle from './Handle/Handle'
 import Journey from './Journey/Journey'
-// import Hear from './Hear/Hear'
+import Hear from './Hear/Hear'
 import Location from './Location/Location'
 import FAQ from './FAQ/FAQ'
 
@@ -25,7 +25,7 @@ const Home = () => {
             <Treat/>
             <Handle/>
             <Available/>
-            {/* <Hear/> */}
+            <Hear/>
             <Journey/>
             <Location/>
             <FAQ/>

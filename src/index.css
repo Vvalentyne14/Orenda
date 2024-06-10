@@ -7,8 +7,18 @@
 }
 
 html *, html *::before, html *::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+}
+
+
+@font-face {
+  font-family: 'Ogg Text TRIAL';
+  src: url('./fonts/OggText-Extrabold-BF646c18fc56511.otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }

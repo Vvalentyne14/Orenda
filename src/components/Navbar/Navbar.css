@@ -11,6 +11,9 @@
   padding: 2em 0;
   display: flex;
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 55;
 }
 
 .nav-wrapper {
