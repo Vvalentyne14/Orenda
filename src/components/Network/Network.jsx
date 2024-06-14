@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Style from "../Network/Network.module.css";
 import Marquee from "react-fast-marquee";
 import metro from "../../assets/metro.png";
@@ -15,6 +15,19 @@ import compsych from "../../assets/compsych.png";
 import multiplan from "../../assets/multiplan.png";
 
 const Network = () => {
+  // const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 900);
+
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsSmallScreen(window.innerWidth < 900);
+  //   };
+
+  //   // window.addEventListener('resize', handleResize);
+
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // });
   return (
     <div className={Style.network_container}>
       <div className={Style.network_wrapper}>
@@ -42,6 +55,14 @@ const Network = () => {
           <img src={emblem} alt="" />
           <img src={cms} alt="" />
           <img src={ghi} alt="" />
+        </div>
+        <div className={Style.netss}>
+          <Marquee className={Style.marquee_main_mob} play={true} speed={150}>
+            <div className="marq" style={{paddingRight: "3em"}}><img src={metro} alt="" /></div>
+            <div className="marq" style={{paddingRight: "3em"}}><img src={emblem} alt="" /></div>
+            <div className="marq" style={{paddingRight: "3em"}}><img src={cms} alt="" /></div>
+            <div className="marq" style={{paddingRight: "3em"}}><img src={ghi} alt="" /> </div>
+          </Marquee>
         </div>
       </div>
     </div>

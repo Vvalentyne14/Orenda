@@ -64,21 +64,20 @@ hr {
   width: 80%;
 }
 
-
 .patient {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: fit-content;
-    max-height: 900px;
-    min-width: 700px;
-    width: 1000px;
-    max-width: 1350px;
-    margin-top: 4em;
-    border-radius: 15px;
-    /* padding-top: 4em; */
-    border: 1px solid #D4D4D4;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: fit-content;
+  max-height: 900px;
+  min-width: 700px;
+  width: 1000px;
+  max-width: 1350px;
+  margin-top: 4em;
+  border-radius: 15px;
+  /* padding-top: 4em; */
+  border: 1px solid #d4d4d4;
+}
 
 .existing-patient {
   background-image: url("../../../assets/blur.png");
@@ -106,23 +105,23 @@ hr {
   letter-spacing: 1px;
 }
 .existing-patient button {
-    font-family: 'open sans';
-    font-size: 13px;
-    font-weight: 500;
-    color: #fff;
-    background: none;
-    border: 1px solid #fff;
-    padding: 8px 16px 8px 16px;
-    border-radius: 25px;
-    width: 26em;
-    display: flex;
-    justify-content: center;
-    gap: .4em;
-    transition: background-color 0.3s;
+  font-family: "open sans";
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  background: none;
+  border: 1px solid #fff;
+  padding: 8px 16px 8px 16px;
+  border-radius: 25px;
+  width: 26em;
+  display: flex;
+  justify-content: center;
+  gap: 0.4em;
+  transition: background-color 0.3s;
 }
 .existing-patient button:hover {
-    background-color: #2E0086;
-    border: #2E0086;
+  background-color: #2e0086;
+  border: #2e0086;
 }
 
 .new-patient {
@@ -137,35 +136,64 @@ hr {
 }
 
 .new-patient h2 {
-    font-family: OggExtraBold;
-    font-size: 23px;
-    color: #070707;
-
+  font-family: OggExtraBold;
+  font-size: 23px;
+  color: #070707;
 }
 .new-patient p {
-    font-family: 'open sans';
-    font-weight: 500;
-    font-size: 15px;
+  font-family: "open sans";
+  font-weight: 500;
+  font-size: 15px;
 }
 .new-patient button {
-    font-family: 'open sans';
-    font-size: 13px;
-    font-weight: 500;
-    color: #2E0086;
-    background: none;
-    border: 1px solid #2E0086;
-    padding: 8px 20px 8px 20px;
-    border-radius: 25px;
-    width: 26em;
-    display: flex;
-    justify-content: center;
-    gap: .4em;
-    transition: background-color 0.3s;
+  font-family: "open sans";
+  font-size: 13px;
+  font-weight: 500;
+  color: #2e0086;
+  background: none;
+  border: 1px solid #2e0086;
+  padding: 8px 20px 8px 20px;
+  border-radius: 25px;
+  width: 26em;
+  display: flex;
+  justify-content: center;
+  gap: 0.4em;
+  transition: background-color 0.3s;
 }
-.new-patient button:hover{
-    background-color: #2E0086;
-    color: #fff;
+.new-patient button:hover {
+  background-color: #2e0086;
+  color: #fff;
 }
 button:hover .color-img {
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+@media screen and (max-width: 900px) {
+  .icon-cards {
+    flex-direction: column;
+    gap: 3.5em;
   }
+  .icon-prop {
+    padding-bottom: 3em;
+    border-bottom: 1px solid rgb(95, 94, 94);
+    gap: 3em;
+    width: 450px;
+  }
+  .icon-prop h3 {
+    font-size: clamp(18px, 5vw, 34px);
+    text-align: center;
+  }
+
+  .icon-prop p {
+    font-size: clamp(20px, 4vw, 36px);
+  }
+
+  .patient {
+    flex-direction: column;
+    border: none;
+  }
+  .new-patient {
+    
+  }
+}
+

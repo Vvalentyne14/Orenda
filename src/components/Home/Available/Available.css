@@ -11,6 +11,8 @@
   gap: 2em;
   padding-top: 5rem;
   padding-bottom: 6rem;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .available-wrapper h1 {
@@ -29,10 +31,21 @@
 }
 
 .avail-img {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     gap: 1.5em;
 }
 .avail-img img {
-    width: 270px;
+    width: 100%;
+}
+@media screen and (max-width: 900px) {
+  .avail-img {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+  .avail-img img {
+    max-width: 100%;
+  }
 }

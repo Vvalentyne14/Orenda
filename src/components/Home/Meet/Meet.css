@@ -14,18 +14,19 @@
   align-items: center;
   display: flex;
   padding: 85px;
-  gap: 4em;
+  gap: clamp(10px, 4vw, 4em);
 }
 
 .left h1 {
   font-family: OggExtraBold;
   font-weight: 700;
-  font-size: 44px;
+  font-size: clamp(30px, 4vw, 44px);
   line-height: 60px;
+  color: #070707;
 }
 .left p {
   font-family: "DM sans";
-  width: 410px;
+  max-width: 410px;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -47,4 +48,28 @@
 .left button:hover {
   background-color: #127801;
   color: #fff;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+  .meet-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .meet-wrapper .right img {
+    max-width: clamp(150px, 70%, 400px) !important;
+    margin: 0 auto;
+  }
+  .meet-wrapper .left {
+    text-align: center;
+  }
+  .left p{
+    font-family: "DM sans";
+    max-width: 790px !important;
+    font-weight: 400;
+    font-size: clamp(18px, 3vw, 35px);
+    line-height: clamp(20px, 1.9em, 39px);
+  }
 }

@@ -20,9 +20,9 @@ const Home = () => {
             {/* <Navbar/> */}
             <Hero/>
             <Network/>
-            <Providers/>
+            {/* <Providers/> */}
             <Meet/>
-            <Treat/>
+            {/* <Treat/> */}
             <Handle/>
             <Available/>
             <Hear/>
