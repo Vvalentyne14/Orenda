@@ -79,7 +79,7 @@
     justify-content: center;
     display: flex;
     font-family: OggBold;
-    font-size: 44px;
+    font-size: clamp(30px, 5vw, );
     margin-bottom: 2em;
     color: #070707;
   }
