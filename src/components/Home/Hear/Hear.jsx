@@ -45,6 +45,7 @@ const Hear = () => {
               <hr />
             </div>
             <div className="flex justify-end">
+              <div className="initials">VE</div>
               <p className="font-open-sans font-bold">Vanessa E.</p>
               <ReviewsNavigation />
             </div>

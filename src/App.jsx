@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import Home from './components/Home/Home'
 import PrivacyPolicy from './components/Privacy/PrivacyPolicy'
-import Blog from './components/Blog/Bloginfo'
+import Blog from './components/Blog/Blogs'
 
 
 function App() {

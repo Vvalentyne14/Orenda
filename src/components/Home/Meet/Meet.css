@@ -73,3 +73,29 @@
     line-height: clamp(20px, 1.9em, 39px);
   }
 }
+
+@media screen and (max-width: 750px){
+  .meet-container {
+    padding: 3em;
+  }
+  .meet-wrapper{
+    padding: 40px;
+    gap: 2em;
+  }
+  .left h1 {
+    line-height: 39px;
+    margin-bottom: .52em;
+  }
+  .meet-wrapper .right img {
+    max-width: 100% !important;
+  }
+  .left p{
+    line-height: 20px;
+  }
+ 
+}
+@media screen and (max-width: 450px) {
+  .meet-wrapper {
+    padding: 1em;
+  }
+}
