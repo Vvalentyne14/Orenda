@@ -2,6 +2,10 @@
   font-family: OggExtraBold;
   src: url(../../../fonts/OggText-Extrabold-BF646c18fc56511.otf);
 }
+@font-face {
+  font-family: OggBold;
+  src: url(../../../fonts/OggText-Bold-BF646c18fc4aabb.ttf);
+}
 
 .meet-container {
   width: 100%;

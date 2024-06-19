@@ -16,6 +16,8 @@
 .journey-wrapper h1 {
   font-family: OggExtraBold;
   font-size: 38px;
+  color: #070707;
+  text-align: center;
 }
 .journey-wrapper {
   display: flex;
@@ -119,7 +121,8 @@ hr {
   border: 1px solid #fff;
   padding: 8px 16px 8px 16px;
   border-radius: 25px;
-  width: 26em;
+  max-width: 26em;
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 0.4em;
@@ -142,7 +145,7 @@ hr {
 }
 
 .new-patient h2 {
-  font-family: OggExtraBold;
+  font-family: OggBold;
   font-size: 23px;
   color: #070707;
 }
@@ -160,7 +163,8 @@ hr {
   border: 1px solid #2e0086;
   padding: 8px 20px 8px 20px;
   border-radius: 25px;
-  width: 26em;
+  max-width: 26em;
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 0.4em;
@@ -183,7 +187,8 @@ button:hover .color-img {
     padding-bottom: 3em;
     border-bottom: 1px solid rgb(95, 94, 94);
     gap: 3em;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
   }
   .icon-prop h3 {
     font-size: clamp(18px, 5vw, 34px);

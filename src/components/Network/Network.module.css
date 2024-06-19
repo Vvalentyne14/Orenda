@@ -2,6 +2,10 @@
   font-family: OggBold;
   src: url(../../fonts/OggText-Bold-BF646c18fc4aabb.ttf);
 }
+@font-face {
+  font-family: OggBold;
+  src: url(../../fonts/OggText-Bold-BF646c18fc4aabb.ttf);
+}
 
 .network_container {
   margin-bottom: 5em;

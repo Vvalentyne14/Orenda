@@ -126,6 +126,9 @@ button:hover .purple {
 
 
 
-@media screen and (max-width: 900) {
-  
+@media screen and (max-width: 800px) {
+  .location-wrapper h1{
+    font-family: 'OggBold' !important;
+    text-align: center;
+  }
 }

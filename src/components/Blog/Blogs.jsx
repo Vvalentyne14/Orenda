@@ -1,14 +1,14 @@
-import React from 'react';
-import Newsletter from '../Newsletter/Newsletter';
+import React, { useState } from 'react';
 import Navbar from '../Navbar/Navbar';
 import divarr from "../../assets/divarr.png";
 import divarrleft from "../../assets/divarrleft.png";
 
-
-
 const Blog = () => {
+  const [selectedCategory, setSelectedCategory] = useState('All categories');
+
   const blogs = [
-    {
+    // (The array of blog objects remains the same)
+{
       title: 'Understanding Anxiety Disorders',
       date: '30 February 2024',
       category: 'Topic A',
@@ -64,34 +64,67 @@ const Blog = () => {
     },
   ];
 
+  // Filter blogs based on the selected category
+  const filteredBlogs = selectedCategory === 'All categories' 
+    ? blogs 
+    : blogs.filter(blog => blog.category === selectedCategory);
+
   return (
     <div>
-        <Navbar/>
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-[32px] text-center font-heading mt-[120px]">Our Blogs</h1>
-      <div className="flex justify-center mb-8">
-        <div className="flex space-x-4">
-          <button className="px-4 py-2 bg-gray-100 text-[#2E0086] rounded-[25px] border font-dm-sans">All categories</button>
-          <button className="px-4 py-2 bg-white text-[#2E0086] rounded-[25px] border text-[17px] ">Topic A</button>
-          <button className="px-4 py-2 bg-white text-[#2E0086] rounded-[25px] border text-[17px] ">Topic B</button>
-          <button className="px-4 py-2 bg-white text-[#2E0086] rounded-[25px] border text-[17px] ">Topic C</button>
-          <button className="px-4 py-2 bg-white text-[#2E0086] rounded-[25px] border text-[17px] ">Topic D</button>
-          <button className="px-4 py-2 bg-white text-[#2E0086] rounded-[25px] border text-[17px] ">Topic E</button>
+      <Navbar />
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-4xl font-bold mb-[32px] text-center font-heading mt-[120px]">Our Blogs</h1>
+        <div className="flex justify-center mb-8">
+          <div className="flex space-x-4">
+            <button 
+              className={`px-4 py-2 ${selectedCategory === 'All categories' ? 'bg-gray-100' : 'bg-white'} text-[#2E0086] rounded-[25px] border font-dm-sans`} 
+              onClick={() => setSelectedCategory('All categories')}
+            >
+              All categories
+            </button>
+            <button 
+              className={`px-4 py-2 ${selectedCategory === 'Topic A' ? 'bg-gray-100' : 'bg-white'} text-[#2E0086] rounded-[25px] border text-[17px]`} 
+              onClick={() => setSelectedCategory('Topic A')}
+            >
+              Topic A
+            </button>
+            <button 
+              className={`px-4 py-2 ${selectedCategory === 'Topic B' ? 'bg-gray-100' : 'bg-white'} text-[#2E0086] rounded-[25px] border text-[17px]`} 
+              onClick={() => setSelectedCategory('Topic B')}
+            >
+              Topic B
+            </button>
+            <button 
+              className={`px-4 py-2 ${selectedCategory === 'Topic C' ? 'bg-gray-100' : 'bg-white'} text-[#2E0086] rounded-[25px] border text-[17px]`} 
+              onClick={() => setSelectedCategory('Topic C')}
+            >
+              Topic C
+            </button>
+            <button 
+              className={`px-4 py-2 ${selectedCategory === 'Topic D' ? 'bg-gray-100' : 'bg-white'} text-[#2E0086] rounded-[25px] border text-[17px]`} 
+              onClick={() => setSelectedCategory('Topic D')}
+            >
+              Topic D
+            </button>
+            <button 
+              className={`px-4 py-2 ${selectedCategory === 'Topic E' ? 'bg-gray-100' : 'bg-white'} text-[#2E0086] rounded-[25px] border text-[17px]`} 
+              onClick={() => setSelectedCategory('Topic E')}
+            >
+              Topic E
+            </button>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredBlogs.map((blog, index) => (
+            <div key={index} className="p-8 bg-[#FAFAFA] shadow-lg rounded-lg max-h-[473px] max-w-[391px] overflow-hidden border hover:bg-[#f8f8ff]">
+              <span className="text-sm text-gray-600 bg-white px-[16px] py-[6px] w-[72px] rounded-[25px] border border-[#cccbcb]">{blog.category}</span>
+              <h2 className="text-2xl font-bold my-4 font-heading leading-10 text-[28px] line-clamp-[2]">{blog.title}</h2>
+              <p className="text-gray-800 mb-4 line-clamp-[8] font-dm-sans font-medium overflow-hidden max-h-[193px]">{blog.description}</p>
+              <p className="text-sm text-gray-600 flex gap-1 items-center mt-[50.08px] mb-[25.04px]"><img src={divarrleft} alt="" /> {blog.date} <img src={divarr} alt="" /></p>
+            </div>
+          ))}
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
-        {blogs.map((blog, index) => (
-          <div key={index} className="p-8 bg-[#FAFAFA] shadow-lg rounded-lg max-h-[473px] max-w-[391px] overflow-hidden border hover:bg-[#f8f8ff]">
-            <span className="text-sm text-gray-600 bg-white px-[16px] py-[6px] w-[72px] rounded-[25px] border border-[#cccbcb]  ">{blog.category}</span>
-            <h2 className="text-2xl font-bold my-4 font-heading leading-10 text-[28px] line-clamp-[2]">{blog.title}</h2>
-            <p className="text-gray-800 mb-4 line-clamp-[8] font-dm-sans font-medium overflow-hidden max-h-[193px]">{blog.description}</p>
-            
-            <p className="text-sm text-gray-600 flex gap-1 items-center mt-[50.08px] mb-[25.04px]"><img src={divarrleft} alt="" /> {blog.date} <img src={divarr} alt="" /></p>
-          </div>
-        ))}
-      </div>
-      <Newsletter />
-    </div>
     </div>
   );
 };
