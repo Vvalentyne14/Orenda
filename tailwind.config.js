@@ -10,6 +10,7 @@ export default {
       'fluid': 'clamp(14px, 2vw, 19px)',
     },
     extend: {
+      fontSize: fontSize,
       fontFamily: {
         "open-sans": ['"Open Sans"', "sans-serif"],
         heading: ["'Ogg Text TRIAL'", "serif"],
