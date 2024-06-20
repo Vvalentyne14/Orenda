@@ -226,3 +226,12 @@ button:hover .color-img {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 560px){
+  .journey-wrapper{
+    padding: 1rem;
+  }
+  .icon-cards {
+    width: 96%;
+  }
+}

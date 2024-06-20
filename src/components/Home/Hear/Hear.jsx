@@ -16,7 +16,7 @@ const Hear = () => {
         <img src={quote} alt="" className="absolute left-0 top-0" />
           <Swiper modules={[Navigation, Pagination]}>
          
-            <SwiperSlide className="relative">
+            <SwiperSlide className="relative sslide">
               <div className=" grid gap-6 font-dm-sans text-[18px] leading-[26px]">
                 <p>
                   “The staff at this location is amazing! The providers are
@@ -50,11 +50,11 @@ const Hear = () => {
                   highly recommend!!”
                 </p>
               </div>
-              <div className=" bg-[rgb(239,235,223)] max-w-[68.75rem] mx-auto mt-6 ">
-                <hr />
+              <div className=" bg-[rgb(239,235,223)]  mx-auto mt-6 mb-4 ">
+                <hr className="w-full"  />
               </div>
               <div className="flex  items-center gap-4">
-                <div className="initials">VE</div>
+                <div className="initials fon bg-white">VE</div>
                 <p className="font-open-sans font-bold ~text-[0.69rem]/[1.66rem]">Vanessa E.</p>
               </div>
             </SwiperSlide>

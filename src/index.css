@@ -2,22 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  } /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
 :root {
   cursor: pointer;
 }
 
-html *, html *::before, html *::after {
+html *,
+html *::before,
+html *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
 
-
 @font-face {
-  font-family: 'Ogg Text TRIAL';
-  src: url('./fonts/OggText-Extrabold-BF646c18fc56511.otf');
+  font-family: "Ogg Text TRIAL";
+  src: url("./fonts/OggText-Extrabold-BF646c18fc56511.otf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

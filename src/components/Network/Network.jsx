@@ -51,10 +51,10 @@ const Network = () => {
           <h4>Out of network</h4>
         </div>
         <div className={Style.nets}>
-          <img src={metro} alt="" />
           <img src={emblem} alt="" />
-          <img src={cms} alt="" />
+          <img src={cms} alt="" style={{padding: 8}} />
           <img src={ghi} alt="" />
+          <img src={metro} alt="" />
         </div>
         <div className={Style.netss}>
           <Marquee className={Style.marquee_main_mob} play={true} speed={150}>
