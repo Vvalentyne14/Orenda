@@ -73,7 +73,12 @@ const Blog = () => {
 
   return (
     <div>
-      <div className="container mx-auto px-4 py-8">
+      <div className="max-w-7xl
+      
+      
+      
+      
+      mx-auto px-4 py-8">
         <h1 className="text-black text-4xl font-bold mb-[32px] text-center font-heading mt-[120px]">
           Our Blogs
         </h1>
@@ -141,7 +146,9 @@ const Blog = () => {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-8">
+        <div
+        
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-8">
           {filteredBlogs.map((blog, index) => (
             <div
               key={index}
