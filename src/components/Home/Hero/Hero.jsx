@@ -1,4 +1,6 @@
 import React from "react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import "./Hero.css";
 import washpark from "../../../assets/washpark.png";
 import plus from "../../../assets/plus.png";
@@ -56,7 +58,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="washpark"><img src={washpark} alt=""  className="w-full h-full"/></div>
+        <div className="washpark"><LazyLoadImage effect = 'blur' height = "100%" src={washpark} alt=""  className="w-full h-full"/></div>
       </div>
     </div>
   );

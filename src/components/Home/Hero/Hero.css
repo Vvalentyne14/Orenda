@@ -8,7 +8,7 @@
 }
 
 .hero-container {
-  margin-bottom: 7em;
+  margin-bottom: 2rem;
 }
 
 .hero-wrapper {
@@ -25,12 +25,12 @@
   font-family: OggExtraBold;
   font-size: clamp(30px, 4vw, 47px);
   /* line-height: 60px; */
-  padding-bottom: 0.6em;
+  padding-bottom: 0.2rem;
   color: #070707;
   max-width: 680px;
 }
 .hero-wrapper .texts p {
-  padding-bottom: 0.8em;
+  padding-bottom: 0.2em;
   line-height: 67px;
   font-size: clamp(16px, 5vw, 22px);
 }
@@ -47,7 +47,7 @@
   color: #2e0086;
   border: 1px solid #2e0086;
   font-family: "open sans";
-  margin-bottom: 2em;
+  margin-bottom: 2.4rem;
 }
 .hero-content button:hover {
   background-color: #2e0086;

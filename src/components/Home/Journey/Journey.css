@@ -194,6 +194,7 @@ button:hover .color-img {
   .icon-prop h3 {
     font-size: clamp(18px, 5vw, 34px);
     text-align: center;
+    font-family: OggBold;
   }
 
   .icon-prop p {
@@ -229,10 +230,32 @@ button:hover .color-img {
 }
 
 @media screen and (max-width: 560px){
+  .journey-container{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
   .journey-wrapper{
     padding: 1rem;
   }
+  .journey-wrapper h1 {
+    font-family: OggBold;
+    font-size: clamp(30px, 6.2vw, 40px);
+  }
   .icon-cards {
     width: 96%;
+    margin-top: 2em;
+  margin-bottom: 2em;
+  }
+  .existing-patient{
+    padding: 1rem;
+    height: 55vh;
+  }
+  .new-patient {
+    padding: 1rem;
+    height: 55vh;
+  }
+  .patient{
+    padding-top: .5rem;
   }
 }
