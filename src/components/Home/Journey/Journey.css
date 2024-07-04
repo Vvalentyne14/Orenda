@@ -10,7 +10,7 @@
 .journey-container {
   padding-top: 3em;
   padding-bottom: 5em;
-  margin-bottom: 5em;
+  margin-bottom: .4rem;
   background-color: #fff;
 }
 .journey-wrapper h1 {
@@ -200,6 +200,9 @@ button:hover .color-img {
   .icon-prop p {
     font-size: clamp(20px, 4vw, 36px);
   }
+  .journey-wrapper hr {
+    display: none;
+  }
 
   .patient {
     flex-direction: column;
@@ -208,6 +211,11 @@ button:hover .color-img {
   .existing-patient {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+  }
+  .new-patient {
+    border: 1px solid #d4d4d4;
+    border-radius: 25px;
+    margin-bottom: 2rem;
   }
   .new-patient p {
     font-size: 20px;

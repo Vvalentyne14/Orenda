@@ -10,10 +10,11 @@ import quote from "../../../assets/quote.png"
 const Hear = () => {
   return (
     <div className="hear-container">
-      <div className="px-6">
+      <div className="px-0">
         <h2 className="font-heading  text-center hear-text">Hear from our Clients</h2>
-        <div className="crystal max-w-[58.13rem] mx-auto sm:pt-[4rem] sm:pl-[4rem] md:pt-[2rem] ~px-8/[5.44rem] relative">
-        <img src={quote} alt="" className="absolute left-0 top-0" />
+        <div className="px-4">
+        <div className="max-w-[50.13rem] mx-auto relative">
+        <img src={quote} alt="" className="absolute -left-8 -top-[3.4rem] ~size-10/[4rem]" />
           <Swiper modules={[Navigation, Pagination]}>
          
             <SwiperSlide className="relative sslide">
@@ -61,6 +62,7 @@ const Hear = () => {
 
             <ReviewsNavigation />
           </Swiper>
+        </div>
         </div>
       </div>
     </div>

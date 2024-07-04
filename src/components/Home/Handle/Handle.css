@@ -64,8 +64,8 @@ button:hover .colored-img {
 
 @media screen and (max-width: 900px) {
   .handle-wrapper .handle p {
-    font-size: clamp(28px, 3vw, 38px);
-    line-height: 5vw;
+    font-size: clamp(23px, 3vw, 38px);
+    line-height: 6vw;
   }
   .handle button {
     padding: 15px 35px 15px 35px;
