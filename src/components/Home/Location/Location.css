@@ -133,3 +133,9 @@ button:hover .purple {
     line-height: 45px;
   }
 }
+
+@media screen and (max-width: 450px) {
+    .location-wrapper h1 {
+      font-size: 29px;
+    }
+}

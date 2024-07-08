@@ -10,7 +10,7 @@
 .journey-container {
   padding-top: 3em;
   padding-bottom: 5em;
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
   background-color: #fff;
 }
 .journey-wrapper h1 {
@@ -195,6 +195,7 @@ button:hover .color-img {
     font-size: clamp(18px, 5vw, 34px);
     text-align: center;
     font-family: OggBold;
+    line-height: 2.5rem;
   }
 
   .icon-prop p {
@@ -222,7 +223,7 @@ button:hover .color-img {
     text-align: center;
   }
   .new-patient h2 {
-    font-size: 30px;
+    font-size: 29px;
     font-family: OggBold;
     text-align: center;
   }
@@ -231,19 +232,19 @@ button:hover .color-img {
     text-align: center;
   }
   .existing-patient h2 {
-    font-size: 30px;
+    font-size: 29px;
     font-family: OggBold;
     text-align: center;
   }
 }
 
-@media screen and (max-width: 560px){
-  .journey-container{
+@media screen and (max-width: 560px) {
+  .journey-container {
     padding-top: 1rem;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
   }
-  .journey-wrapper{
+  .journey-wrapper {
     padding: 1rem;
   }
   .journey-wrapper h1 {
@@ -253,17 +254,62 @@ button:hover .color-img {
   .icon-cards {
     width: 96%;
     margin-top: 2em;
-  margin-bottom: 2em;
+    margin-bottom: 2em;
   }
-  .existing-patient{
+  .existing-patient {
     padding: 1rem;
-    
   }
   .new-patient {
     padding: 1rem;
-
   }
-  .patient{
-    padding-top: .5rem;
+  .patient {
+    padding-top: 0.5rem;
+  }
+  .new-patient{
+    height: 31.25rem;
+  }
+  .existing-patient {
+    height: 31.25rem;
+  }
+  .existing-patient p {
+    font-size: clamp(15px, 4vw, 20px);
+  }
+  .new-patient p {
+    font-size: clamp(15px, 4vw, 20px);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .journey-wrapper > h1 {
+    font-size: clamp(20px, 6.2vw, 40px);
+  }
+  .new-patient h2 {
+    font-size: 25px;
+  }
+  .existing-patient h2 {
+    font-size: 25px;
+  }
+  .icon-prop {
+    gap: 1em;
+    width: 100%;
+    max-width: 330px;
+  }
+  .icon-prop p {
+    font-size: clamp(17px, 4vw, 36px);
+  }
+  .new-patient{
+    height: 28.25rem;
+  }
+  .existing-patient {
+    height: 28.25rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .new-patient{
+    height: 26.25rem;
+  }
+  .existing-patient {
+    height: 26.25rem;
   }
 }

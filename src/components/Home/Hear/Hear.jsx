@@ -14,7 +14,7 @@ const Hear = () => {
         <h2 className="font-heading  text-center hear-text">Hear from our Clients</h2>
         <div className="px-4">
         <div className="max-w-[50.13rem] mx-auto relative">
-        <img src={quote} alt="" className="absolute -left-8 -top-[3.4rem] ~size-10/[4rem]" />
+        <img src={quote} alt="" className="absolute -left-[.8rem] -top-[3.4rem] ~size-10/[4rem]" />
           <Swiper modules={[Navigation, Pagination]}>
          
             <SwiperSlide className="relative sslide">
@@ -35,7 +35,7 @@ const Hear = () => {
               </div>
               <div className="flex  items-center gap-4 ">
                 <div className="initials font-open-sans bg-white">VE</div>
-                <p className="font-open-sans font-bold ~text-[0.69rem]/[1.66rem]">Vanessa E.</p>
+                <p className="font-open-sans font-bold ~text-[1.2rem]/[1.66rem]">Vanessa E.</p>
               </div>
             </SwiperSlide>
             <SwiperSlide className="relative sslide">

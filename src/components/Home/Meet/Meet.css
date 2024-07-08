@@ -99,7 +99,14 @@
  
 }
 @media screen and (max-width: 450px) {
+  .meet-container {
+    padding: 2rem;
+  }
   .meet-wrapper {
     padding: 1em;
+  }
+  .left h1 {
+    font-size: clamp(25px, 4vw, 40px);
+    line-height: 29px;
   }
 }

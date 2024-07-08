@@ -44,7 +44,6 @@ const Network = () => {
             <img src={compsych} alt="" />
             <img src={tricare} alt="" />
             <img src={multiplan} alt="" />
-            <img src={oscar} alt="" />
           </Marquee>
         </div>
         <div className={Style.texts}>

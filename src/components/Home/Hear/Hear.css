@@ -25,8 +25,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  font-size: clamp(18px, 4vw, 28px);
+  font-weight: 700;
+  font-size: clamp(20px, 4vw, 28px);
 }
 
 
@@ -38,7 +38,7 @@
 
 @media screen and (max-width: 640px) {
   .hear-container {
-    padding: 5em 1rem;
+    padding: 3.5em 1rem;
   }
   .sslide {
     margin-bottom: 2rem;
@@ -49,6 +49,16 @@
   }
   .hear-container > div > h2 {
     font-family: OggBold;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .hear-container {
+    padding: 2rem 1rem;
+  }
+  .hear-text {
+    font-size: clamp(25px, 4vw, 30px);
+    margin-bottom: 3.5rem;
   }
 }
 
