@@ -199,7 +199,7 @@ button:hover .color-img {
   }
 
   .icon-prop p {
-    font-size: clamp(20px, 4vw, 36px);
+    font-size: clamp(20px, 3vw, 36px);
   }
   .journey-wrapper hr {
     display: none;
