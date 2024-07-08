@@ -50,7 +50,7 @@ const Hear = () => {
         <div className="px-4">
         <div className="max-w-[50.13rem] mx-auto relative">
         <img src={quote} alt="" className="absolute -left-[.8rem] -top-[3.4rem] ~size-10/[4rem]" />
-          <Swiper modules={[Navigation, Pagination]} autoHeight = {true}>
+          <Swiper modules={[Navigation, Pagination]} breakpoints={{768: {autoHeight: true}}}>
          
             {clientsReviews.map(client => (<SwiperSlide className="relative sslide">
               <div className=" grid gap-6 font-dm-sans text-[18px] leading-[26px]">
