@@ -33,7 +33,7 @@
 .hear-text {
   font-size: clamp(30px, 4vw, 42px);
   font-family: OggBold;
-  margin-bottom: 2em;
+  margin-bottom: 1.8rem;
 }
 
 .swiper-slide {
@@ -53,6 +53,10 @@
   }
   .hear-container > div > h2 {
     font-family: OggBold;
+    margin-bottom: 1rem;
+  }
+  .quotes {
+    top: -3rem;
   }
 }
 
@@ -63,6 +67,9 @@
   .hear-text {
     font-size: clamp(25px, 4vw, 30px);
     margin-bottom: 3.5rem;
+  }
+  .quotes {
+    top: -3rem;
   }
 }
 

@@ -54,8 +54,8 @@ const Network = () => {
         <div className={Style.nets}>
           <img src={emblem} alt=""  className="max-w-[10rem]"/>
           <img src={cms} alt="" style={{padding: 8}}  className="max-w-[3rem]"/>
-          <img src={ghi} alt=""  className="max-w-[3rem]"/>
           <img src={fidelis} alt=""  className="max-w-[5rem]"/>
+          <img src={ghi} alt=""  className="max-w-[3rem]"/>
           <img src={metro} alt=""  className="max-w-[10rem]"/>
         </div>
         <div className={Style.netss}>

@@ -26,7 +26,7 @@ const Hero = () => {
           <div className="items">
             <div className="items-right">
               <div className="items-right-contents">
-                <p className="font-open-sans">60 <img src={plus} alt="" style={{ width: 15 }} /></p>
+                <p className="font-open-sans">70 <img src={plus} alt="" style={{ width: 15 }} /></p>
                 <img src={Icon} alt="" style={{width:13}}/>
               </div>
               <p>Providers</p>
@@ -35,7 +35,7 @@ const Hero = () => {
             <div className="items-left">
               <div className="items-left-contents">
                 <div className="items-left-img">
-                  <p>16k <img src={plus} alt="" style={{ width: 15 }}/></p>
+                  <p>20k <img src={plus} alt="" style={{ width: 15 }}/></p>
                 </div>
                 <img src={user} alt="" style={{ width: 45 }} />
               </div>
