@@ -49,7 +49,7 @@ const Hear = () => {
         <h2 className="font-heading  text-center hear-text">Hear from our Clients</h2>
         <div className="px-4">
         <div className="max-w-[50.13rem] mx-auto relative">
-        <img src={quote} alt="" className="absolute -right-[.1rem]  -top-[4rem] ~size-6/[4rem] quotes" />
+        
           <Swiper modules={[Navigation, Pagination]} breakpoints={{768: {autoHeight: true}}}>
          
             {clientsReviews.map(client => (<SwiperSlide className="relative sslide">

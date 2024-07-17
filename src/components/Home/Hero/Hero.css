@@ -7,26 +7,67 @@
   src: url(../../../fonts/OggText-Bold-BF646c18fc4aabb.ttf);
 }
 
-.hero-container {
+/* .hero-container {
   margin-bottom: 2rem;
+  background: url(../../../assets/homepage.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+} */
+.hero-container {
+  position: relative;
+  margin-bottom: 2rem;
+  color: #fff;
+  overflow: hidden; /* Ensures the pseudo-element doesn't overflow the container */
 }
 
+.hero-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../../../assets/homepage.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: -2; /* Places the image behind the overlay */
+}
+
+.hero-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity to make it darker or lighter */
+  z-index: -1; /* Places the overlay behind the content but above the image */
+}
+
+.hero-container > * {
+  position: relative;
+  z-index: 1; /* Ensures the content is above the background and overlay */
+}
+
+
+
 .hero-wrapper {
-  display: flex;
   justify-content: space-between;
   gap: 16px;
 }
+
 .hero-wrapper .hero-content {
   max-width: 710px;
   margin-left: clamp(1rem, 3vw, 5rem);
-  margin-top: 10em;
+  padding: 10rem 0 4rem 0;
 }
 .hero-wrapper .texts h1 {
   font-family: OggExtraBold;
   font-size: clamp(30px, 4vw, 47px);
   /* line-height: 60px; */
   padding-bottom: 0.2rem;
-  color: #070707;
+  color: #fff;
   max-width: 680px;
 }
 .hero-wrapper .texts p {

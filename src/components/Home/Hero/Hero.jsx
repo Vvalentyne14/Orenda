@@ -9,6 +9,8 @@ import Icon from "../../../assets/Icon.png"
 import user from "../../../assets/user.png"
 import pluswhite from "../../../assets/pluswhite.png"
 import pluswhitee from "../../../assets/pluswhite.png"
+import homepagecrop from "../../../assets/homepage-crop.jpg"
+import homepage from "../../../assets/homepage.jpg"
 
 const Hero = () => {
   return (
@@ -58,7 +60,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="washpark"><LazyLoadImage effect = 'blur' height = "100%" src={washpark} alt=""  className="w-full h-full"/></div>
+        {/* <div className="washpark"><LazyLoadImage effect = 'blur' height = "100%" src={homepagecrop} alt=""  className="w-full h-full"/></div> */}
       </div>
     </div>
   );
