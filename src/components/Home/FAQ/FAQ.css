@@ -103,6 +103,10 @@
 .Frequently > p {
     margin-top: 1em;
 }
+.freq-prop {
+  display: flex;
+  gap: .8rem;
+}
 .freq-prop p{
     display: flex;
     align-items: center;

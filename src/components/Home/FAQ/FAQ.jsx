@@ -3,6 +3,7 @@ import "./FAQ.css";
 import QA from "./QA";
 import callpurple from "../../../assets/callpurple.png";
 import mailpurple from "../../../assets/mailpurple.png";
+import send from "../../../assets/Send.png";
 
 export default function FAQ() {
   const [faqs, setFaqs] = useState([
@@ -81,17 +82,18 @@ export default function FAQ() {
       <p>Can’t find your question?</p>
       <div className="freq-text">
         <div className="freq-prop">
+          <p><img src={callpurple} alt="" />Call</p>
+          <span className="font-medium"> | </span>
           <p>
-            <img src={mailpurple} alt="" /> Send a message
+            <img src={send} alt="" /> Text
+          </p>
+          <span className="font-medium"> | </span>
+          <p>
+             <img src={mailpurple} alt="" />
+            Email
           </p>
         </div>
-        <p>or</p>
-        <div className="freq-prop">
-          <p>
-            <img src={callpurple} alt="" />
-            Call to ask
-          </p>
-        </div>
+        
       </div>
     </div>
   );
