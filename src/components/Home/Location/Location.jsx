@@ -20,10 +20,12 @@ const Location = () => {
               provider.
             </h2>
             <p >Please call us to confirm!</p>
+            <a href="tel:+1234567890">
             <button className="w-full md:max-w-[12.44rem] mx-auto md:mx-0">
               <img src={call} alt="" className="purple" />
               Call now
             </button>
+            </a>
           </div>
         </div>
       </div>

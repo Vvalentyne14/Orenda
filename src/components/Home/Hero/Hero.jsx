@@ -11,6 +11,7 @@ import pluswhite from "../../../assets/pluswhite.png"
 import pluswhitee from "../../../assets/pluswhite.png"
 import homepagecrop from "../../../assets/homepage-crop.jpg"
 import homepage from "../../../assets/homepage.jpg"
+import pluswhiter from "../../../assets/plus_white.png"
 
 const Hero = () => {
   return (
@@ -23,12 +24,12 @@ const Hero = () => {
               Therapy
             </h1>
             <p className="font-dm-sans">Providing Mental Health Care with Convenience.</p>
-            <button>Book Now</button>
+            <button><a target="_blank" href="https://www.zocdoc.com/wl/orendapsych/search?address=10016&after_5pm=false&before_10am=false&day_filter=AnyDay&dr_specialty=405&filters=%7B%7D&gender=-1&insurance_carrier=-1&insurance_plan=-1&language=-1&offset=0&parentSearchRequestId=5ad6e11b-e197-4dc6-8576-3101647da281&ppsSelectionId=f697582c-2de0-4006-ab39-53b075bb2ef4&reason_visit=493&searchOriginator=SearchBar&searchQueryGuid=8d62bd4a-fe91-43fa-bbec-391fc97eecdb&searchType=specialty&search_query=Adult+Psychiatric+%26+Mental+Health+Nurse+Practitioner&sees_children=false&sort_type=Default&visitType=inPersonAndVirtualVisits">Book Now</a></button>
           </div>
           <div className="items">
             <div className="items-right">
               <div className="items-right-contents">
-                <p className="font-open-sans">70 <img src={plus} alt="" style={{ width: 15 }} /></p>
+                <p className="font-open-sans">70 <img src={pluswhiter} alt="" style={{ width: 15 }} /></p>
                 <img src={Icon} alt="" style={{width:13}}/>
               </div>
               <p>Providers</p>
@@ -37,7 +38,7 @@ const Hero = () => {
             <div className="items-left">
               <div className="items-left-contents">
                 <div className="items-left-img">
-                  <p>20k <img src={plus} alt="" style={{ width: 15 }}/></p>
+                  <p>20k <img src={pluswhiter} alt="" style={{ width: 15 }}/></p>
                 </div>
                 <img src={user} alt="" style={{ width: 45 }} />
               </div>

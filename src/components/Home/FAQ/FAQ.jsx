@@ -82,18 +82,26 @@ export default function FAQ() {
       <p>Can’t find your question?</p>
       <div className="freq-text">
         <div className="freq-prop">
-          <p><img src={callpurple} alt="" />Call</p>
+          <a href="tel:+123456789">
+            <p>
+              <img src={callpurple} alt="" />
+              Call
+            </p>
+          </a>
           <span className="font-medium"> | </span>
-          <p>
-            <img src={send} alt="" /> Text
-          </p>
+          <a href="sms:+123456789">
+            <p>
+              <img src={send} alt="" /> Text
+            </p>
+          </a>
           <span className="font-medium"> | </span>
-          <p>
-             <img src={mailpurple} alt="" />
-            Email
-          </p>
+          <a href="mailto:">
+            <p>
+              <img src={mailpurple} alt="" />
+              Email
+            </p>
+          </a>
         </div>
-        
       </div>
     </div>
   );

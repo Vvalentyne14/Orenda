@@ -112,6 +112,8 @@ hr {
 .existing-patient h2 {
   font-family: "Nunito sans";
   letter-spacing: 1px;
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 .existing-patient button {
   font-family: "open sans";
