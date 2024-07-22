@@ -57,6 +57,7 @@
   .available-wrapper h1{
     font-size: clamp(30px, 5vw, 44px);
     font-family: OggBold;
+    text-align: center;
   }
   .available-wrapper p {
     text-align: center;

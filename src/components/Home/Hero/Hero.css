@@ -310,6 +310,7 @@
 @media screen and (max-width: 750px) {
   .hero-wrapper .hero-content {
     padding: 0 0 4rem 0;
+    margin-left: clamp(.5rem, 3vw, 5rem);
   }
   .hero-wrapper .texts h1 {
     line-height: 48px;
