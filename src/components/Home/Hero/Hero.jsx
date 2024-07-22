@@ -49,7 +49,7 @@ const Hero = () => {
           
           <div className="items-mobile">
             <div className="it-mobile-left">
-              <div><h1 > 60 <span>+</span></h1> <img src={Icon} alt="" /></div>
+              <div><h1 > 70 <span>+</span></h1> <img src={Icon} alt="" /></div>
               <p>Providers</p>
               <img src={faces} alt="" />
             </div>

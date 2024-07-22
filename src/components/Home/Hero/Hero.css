@@ -186,7 +186,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 10em 1rem; /* Adjust padding as needed */
+     /* Adjust padding as needed */
     position: relative;
   }
   .hero-wrapper .hero-content {
@@ -301,6 +301,12 @@
     color: white;
     border: 1px solid white;
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hero-wrapper .hero-content {
+    padding: 2rem 0 1rem 0;
   }
 }
 
