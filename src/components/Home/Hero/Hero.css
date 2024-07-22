@@ -22,7 +22,7 @@
 }
 
 .hero-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -35,13 +35,18 @@
 }
 
 .hero-container::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity to make it darker or lighter */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the opacity to make it darker or lighter */
   z-index: -1; /* Places the overlay behind the content but above the image */
 }
 
@@ -49,8 +54,6 @@
   position: relative;
   z-index: 1; /* Ensures the content is above the background and overlay */
 }
-
-
 
 .hero-wrapper {
   justify-content: space-between;
@@ -186,7 +189,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-     /* Adjust padding as needed */
+    /* Adjust padding as needed */
     position: relative;
   }
   .hero-wrapper .hero-content {
@@ -306,15 +309,38 @@
 
 @media screen and (max-width: 750px) {
   .hero-wrapper .hero-content {
-    padding: 0 0 1rem 0;
+    padding: 0 0 4rem 0;
+  }
+  .hero-wrapper .texts h1 {
+    line-height: 48px;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero-wrapper .texts h1 {
+      line-height: 38px;
+      margin-bottom: .8rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .hero-wrapper .texts p {
+      line-height: 25px;
+      margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero-wrapper .texts p {
+      font-size: clamp(17px, 4vw, 22px);
   }
 }
 
 @media screen and (max-width: 420px) {
   .hero-wrapper .texts h1 {
-    font-size: clamp(20px, 3vw, 30px);
-    font-weight: 300;
+    font-size: clamp(22px, 3vw, 30px);
+    font-weight: 400;
     font-family: OggBold;
+    line-height: 30px;
   }
   .hero-wrapper img {
     max-width: 143px;

@@ -11,10 +11,10 @@
   padding: 2em 0;
   display: flex;
   justify-content: center;
-  position: sticky;
+  position: fixed;
   width: 100%;
   z-index: 55;
-  top: 0;
+  /* top: 0; */
 }
 
 .nav-wrapper {
