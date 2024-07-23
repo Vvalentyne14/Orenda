@@ -73,7 +73,7 @@ export default function FAQ() {
 
   return (
     <div className="Frequently">
-      <h1>Frequently Asked Questions</h1>
+      <h1 className="~text-[1.35rem]/[2.625rem]">Frequently Asked Questions</h1>
       <div className="faqs">
         {faqs.map((faq, index) => (
           <QA faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
