@@ -12,6 +12,7 @@ import Journey from './Journey/Journey'
 import Hear from './Hear/Hear'
 import Location from './Location/Location'
 import FAQ from './FAQ/FAQ'
+import Disclaimer from './Disclaimer/Disclaimer'
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
             <Handle/>
             <Available/>
             <Hear/>
+            
             <Journey/>
             <Location/>
             <FAQ/>

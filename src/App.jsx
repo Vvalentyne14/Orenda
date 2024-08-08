@@ -6,6 +6,7 @@ import PrivacyPolicy from "./components/Privacy/PrivacyPolicy";
 import Blog from "./components/Blog/Blogs";
 import Layout from "./components/Layout";
 import Bloginfo from "./components/Blog/Bloginfo";
+// import Blogtel from "./components/Blog/Blogtel";
 
 function App() {
   return (
