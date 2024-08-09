@@ -17,7 +17,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="privacy policy" element={<PrivacyPolicy />} />
             <Route path="blogs" element={<Blog />} />
-            <Route path="blog info" element={<Bloginfo />} />
+            <Route path="blog/:title" element={<Bloginfo />} />
           </Route>
         </Routes>
       </div>

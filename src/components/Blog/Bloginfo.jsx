@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import { blogs } from "./Blogs";
 import bloginfoframe from "../../assets/bloginfoframe.png";
 import divarrleft from "../../assets/divarrleft.png";
@@ -14,7 +15,8 @@ import blogmobile from "../../assets/blogmobile.png";
 
 
 const Bloginfo = () => {
-  const blog = blogs[1];
+  const {title} = useParams()
+  const blog = blogs.find(blog => blog.title === title)
   
   return (
     <div>

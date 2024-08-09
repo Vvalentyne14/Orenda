@@ -184,7 +184,7 @@ const Blog = () => {
               key={index}
               className="p-8 bg-[#FAFAFA] shadow-lg rounded-lg max-h-[473px] max-w-[391px] overflow-hidden border hover:bg-[#f8f8ff]"
             >
-              <Link to={'/blog info'}>
+              <Link to={`/blog/${blog.title}`}>
                 <span className="text-sm text-gray-600 bg-white px-[16px] py-[6px] w-[72px] rounded-[25px] border border-[#cccbcb]">
                   {blog.category}
                 </span>
