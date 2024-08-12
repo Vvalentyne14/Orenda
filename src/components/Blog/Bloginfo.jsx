@@ -19,7 +19,7 @@ const Bloginfo = () => {
     <div>
       <div className="max-w-[1215px] mx-auto p-6 bg-white flex flex-col gap-2">
         <h4 className="flex items-center justify-center font-dm-sans text-[#757575]">
-          <span>Home / Blog / Understanding Anxiety Disorders</span>
+          <span>Home / Blog / {blog.title}</span>
         </h4>
         <h1 className="sm:text-[28px] font-medium text-[#070707] text-center mb-4 font-heading mt-[13px] w-[70%] mx-auto">
           {blog.title}
