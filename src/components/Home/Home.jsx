@@ -15,6 +15,7 @@ import FAQ from './FAQ/FAQ'
 import Disclaimer from './Disclaimer/Disclaimer'
 
 const Home = () => {
+   
   return (
     <div className="home_container">
         <div className="home_wrapper">

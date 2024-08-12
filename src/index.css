@@ -17,6 +17,10 @@
   cursor: pointer;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html *,
 html *::before,
 html *::after {

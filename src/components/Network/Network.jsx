@@ -38,9 +38,9 @@ const Network = () => {
         </div>
         <div className={Style.slider}>
           <Marquee className={Style.marquee_main} play={true} speed={150}>
-            <img src={united} alt="" />
-            <img src={aetna} alt="" />
-            <img src={oscar} alt="" />
+            <img src={united} alt="" className="w-[24rem]" />
+            <img src={aetna} alt="" className="w-[22rem]" />
+            <img src={oscar} alt=""  className="w-[19rem]" />
             <img src={cigna} alt="" />
             <img src={anthem} alt="" />
             <img src={compsych} alt="" />
