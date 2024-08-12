@@ -1,17 +1,14 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { blogs } from "./Blogs";
-import bloginfoframe from "../../assets/bloginfoframe.png";
 import divarrleft from "../../assets/divarrleft.png";
 import divarr from "../../assets/divarr.png";
 import "./Blogs.css";
-import worry from "../../assets/worry.png";
 import profile from "../../assets/profile.png";
 import x from "../../assets/X.png";
 import LinkedIn from "../../assets/LinkedIn.png";
 import facebook from "../../assets/Facebook.png";
 import Messages from "../../assets/Messages.png";
-import blogmobile from "../../assets/blogmobile.png";
 
 
 const Bloginfo = () => {
@@ -72,7 +69,7 @@ const Bloginfo = () => {
         </p>
 
         <img className="md:hidden" src={blog.billboard} alt="" />
-        <img className="w-[100%] h-auto my-6 md:block hidden " src={blog.billboard} alt="Worry Less" />
+        <img className="w-[100%] h-auto my-6 md:block hidden " src={blog.billboard} alt="" />
 
         <hr className="w-[100%] h-[2px] bg-gray-400 mt-24" />
 
