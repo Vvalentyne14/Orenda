@@ -33,28 +33,46 @@
   margin-bottom: 1em;
   width: 90%;
 }
-.handle button {
-  font-family: "open sans";
+
+.btn-handle {
+position: relative;
+color: #fff;
+background-color: #2e0086;
+font-family: "open sans";
   padding: 11px 35px 11px 35px;
   border-radius: 30px;
-  border: 1px solid #2e0086;
-  color: #fff;
-  background-color: #2e0086;
   font-size: 15px;
   font-weight: 600;
-  transition: background-color 0.3s, color 0.3s;
   cursor: pointer;
   align-items: center;
   justify-content: center;
   display: flex;
   gap: 1em;
   width: 27em;
-  outline: #2e0086;
+  z-index: 1;
+  border: 1px solid #2e0086;
+  overflow: hidden;
 }
-.handle button:hover {
-  color: #2e0086;
+.btn-handle-effect::before{
+  
+content: "";
+top: 0;
+left: 0;
+width: 0%;
+height: 100%;
+border-radius: 30px;
+z-index: -1;
+transition: width .3s ease-in-out;
+position: absolute;
+}
+.btn-handle-effect:hover{
+color: #2e0086;
+font-weight: 700;
+}
+.btn-handle-effect:hover::before{
+  width: 100%;
   background-color: #fff;
-  outline: #2e0086;
+  color: #2e0086 !important;
 }
 
 button:hover .colored-img {

@@ -36,6 +36,11 @@
   text-align: left;
 }
 
+.locations {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
 .avail-img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

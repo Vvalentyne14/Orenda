@@ -39,6 +39,24 @@ const Meet = () => {
         stagger: 0.2, // Stagger by 0.2 seconds
       }
     );
+    gsap.fromTo(
+      ".right > *",
+      {
+        y: 150,        // Start 50px down
+        opacity: 0,   // Start with 0 opacity
+        filter: "blur(2px)", // Optional: start slightly blurred if needed
+        duration: 1.5,
+      },
+      {
+        scrollTrigger: ".right",
+        y: 0,         // End at the original position
+        opacity: 1,   // End with full opacity
+        filter: "blur(0px)", // Ensure no blur at the end
+        duration: 1,  // Animation duration
+        ease: "power2.out",  // Easing function
+        stagger: 0.2, // Stagger by 0.2 seconds
+      }
+    );
 
     
   }, []);
@@ -52,7 +70,7 @@ const Meet = () => {
             Take this assessment and we'll help pair you to the right provider.
           </p>
           <div>
-            <button>Take Assessment</button>
+            <button className="btn-meet btn-meet-effect">Take Assessment</button>
           </div>
         </div>
         <div className="right">

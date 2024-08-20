@@ -64,7 +64,7 @@ const PrivacyPolicy = () => {
               may affect the availability or quality use of our services.
             </p>
           </div>
-
+{/* 
           <div className="privacy-text">
             <h3>International Data Transfer:</h3>
             <p>
@@ -72,7 +72,7 @@ const PrivacyPolicy = () => {
               borders for processing or storage. We ensure all data transfers
               comply with international privacy standards and regulations.
             </p>
-          </div>
+          </div>  */}
 
           <div className="privacy-text">
             <h3>Cookies and Website Usage:</h3>

@@ -38,23 +38,41 @@
 .left > div {
   padding-top: 1.8em;
 }
-.left button {
-  font-family: "open sans";
+
+.btn-meet {
+position: relative;
+font-family: "open sans";
   padding: 9px 35px 9px 35px;
   border-radius: 30px;
   border: 1px solid #127801;
   color: #127801;
   font-size: 15px;
   font-weight: 600;
-  transition: background-color 0.3s, color 0.3s;
   cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
 }
-.left button:hover {
+
+.btn-meet-effect::before {
+
+content: "";
+top: 0;
+left: 0;
+width: 0%;
+height: 100%;
+z-index: -1;
+border-radius: 30px;
+transition: width .3s ease-in-out;
+position: absolute;
+}
+
+.btn-meet-effect:hover{
+color: #fff;
+}
+.btn-meet-effect:hover::before{
+  width: 100%;
   background-color: #127801;
-  color: #fff;
 }
-
-
 
 
 @media screen and (max-width: 900px) {

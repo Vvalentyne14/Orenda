@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Style from "../Network/Network.module.css";
 import Marquee from "react-fast-marquee";
 import metro from "../../assets/metro.png";
@@ -16,23 +18,40 @@ import multiplan from "../../assets/multiplan.png";
 import fidelis from "../../assets/fidelis-care-logo-vector.png"
 
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Network = () => {
-  // const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 900);
+  // **Use refs to target elements for animation**
+  const wrapperRef = useRef(null);  // Added ref for the wrapper
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setIsSmallScreen(window.innerWidth < 900);
-  //   };
+  useEffect(() => {
+    // **GSAP animation with ref**
+    gsap.fromTo(
+      wrapperRef.current.children,  // Targets all direct children of the wrapper
+      {
+        y: 150,
+        opacity: 0,
+        filter: "blur(2px)",
+      },
+      {
+        scrollTrigger: {
+          trigger: wrapperRef.current,  // Trigger animation when this wrapper is in view
+          start: "top 80%", // Adjust the trigger point (optional)
+        },
+        y: 0,
+        opacity: 1,
+        filter: "blur(0px)",
+        ease: "power2.out",
+        stagger: 0.2,  // Animate child elements in sequence
+        duration: 1.5,
+      }
+    );
+  }, []);
 
-  //   // window.addEventListener('resize', handleResize);
 
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // });
   return (
     <div className={Style.network_container}>
-      <div className={Style.network_wrapper}>
+      <div className={Style.network_wrapper} ref={wrapperRef}>
         <div className={Style.header}>
           <h3>In network with</h3>
         </div>
