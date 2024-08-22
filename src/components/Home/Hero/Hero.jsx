@@ -1,7 +1,5 @@
-import React from "react";
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
-import "react-lazy-load-image-component/src/effects/blur.css";
 import CountUp from "react-countup";
 import { TypeAnimation } from "react-type-animation";
 import "./Hero.css";
@@ -13,16 +11,43 @@ import pluswhiter from "../../../assets/plus_white.png";
 const Hero = () => {
   const providersRef = useRef(null);
   const livesChangedRef = useRef(null);
-  const [key, setKey] = useState(0);
-  const textsRef = useEffect(() => {
-    const interval = setInterval(() => {
-      setKey((prevKey) => prevKey + 1); // Change key to force re-render
-    }, 5000); 
 
-    return () => clearInterval(interval); // Cleanup interval on unmount
+  const [providersInView, setProvidersInView] = useState(false);
+  const [livesChangedInView, setLivesChangedInView] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (entry.target === providersRef.current) {
+              setProvidersInView(true);
+            }
+            if (entry.target === livesChangedRef.current) {
+              setLivesChangedInView(true);
+            }
+          }
+        });
+      },
+      { threshold: 0.5 } // Trigger when 50% of the element is in view
+    );
+
+    if (providersRef.current) {
+      observer.observe(providersRef.current);
+    }
+    if (livesChangedRef.current) {
+      observer.observe(livesChangedRef.current);
+    }
+
+    return () => {
+      if (providersRef.current) {
+        observer.unobserve(providersRef.current);
+      }
+      if (livesChangedRef.current) {
+        observer.unobserve(livesChangedRef.current);
+      }
+    };
   }, []);
-
- 
 
   useEffect(() => {
     gsap.fromTo(
@@ -41,8 +66,8 @@ const Hero = () => {
     <div className="hero-container">
       <div className="hero-wrapper">
         <div className="hero-content">
-          <div className="texts" ref={textsRef}>
-            <h1 className="">
+          <div className="texts">
+            <h1>
               Online Psychiatry Practice Prescription Management and Talk
               Therapy
             </h1>
@@ -65,21 +90,22 @@ const Hero = () => {
           <div className="items">
             <div className="items-right bord-Animation">
               <div className="items-right-contents">
-                <p className="font-open-sans w-16 " ref={providersRef}>
+                <p className="font-open-sans w-16" ref={providersRef}>
                   <CountUp start={0} end={70} duration={5} />
                   <img src={pluswhiter} alt="plus icon" style={{ width: 15 }} />
                 </p>
                 <img src={Icon} alt="icon" style={{ width: 13 }} />
               </div>
               <p className="min-h-8">
-                <TypeAnimation
-                  key={key}
-                  sequence={["Providers", 1000, ""]}
-                  speed={250}
-                  style={{ fontSize: "1em" }}
-                  repeat={false}
-                  cursor={false}
-                />
+                {providersInView && (
+                  <TypeAnimation
+                    sequence={["Providers"]}
+                    speed={250}
+                    style={{ fontSize: "1em" }}
+                    repeat={0}
+                    cursor={false}
+                  />
+                )}
               </p>
               <img src={faces} alt="" style={{ width: 200 }} />
             </div>
@@ -87,14 +113,7 @@ const Hero = () => {
               <div className="items-left-contents">
                 <div className="items-left-img" ref={livesChangedRef}>
                   <p>
-                    <CountUp
-                      start={0}
-                      end={21}
-                      duration={5}
-
-                      // formattingFn={(val) => `${Math.floor(val / 1000)}k`}
-                    
-                    />
+                    <CountUp start={0} end={21} duration={5} />
                     k
                     <img
                       src={pluswhiter}
@@ -106,71 +125,66 @@ const Hero = () => {
                 <img src={user} alt="user icon" style={{ width: 45 }} />
               </div>
               <p style={{ fontSize: 20 }}>
-                <TypeAnimation
-                  key={key}
-                  sequence={["Lives Changed", 1000, ""]}
-                  speed={200}
-                  repeat={false}
-                  cursor={false}
-                /></p>
+                {livesChangedInView && (
+                  <TypeAnimation
+                    sequence={["Lives Changed"]}
+                    speed={200}
+                    repeat={0}
+                    cursor={false}
+                  />
+                )}
+              </p>
             </div>
           </div>
 
-
-
-
-
-
-        {/* HERO MOBILE SECTION */}
-       
-
+          {/* HERO MOBILE SECTION */}
           <div className="items-mobile bord-Animation">
             <div className="it-mobile-left">
               <div>
-                <h1 ref={providersRef}>
+                <h1>
                   <CountUp start={0} end={70} duration={3} />
                   <span>+</span>
                 </h1>
                 <img src={Icon} alt="" />
               </div>
               <p className="min-h-8">
-                <TypeAnimation
-                  key={key}
-                  sequence={["Providers", 1000, ""]}
-                  speed={200}
-                  style={{ fontSize: "1em" }}
-                  repeat={Infinity}
-                  cursor={false}
-                /></p>
+                {providersInView && (
+                  <TypeAnimation
+                    sequence={["Providers", 1000, ""]}
+                    speed={200}
+                    style={{ fontSize: "1em" }}
+                    repeat={0}
+                    cursor={false}
+                  />
+                )}
+              </p>
               <img src={faces} alt="" />
             </div>
             <div className="line"></div>
             <div className="it-mobile-right">
-              <h1 ref={livesChangedRef}>
+              <h1>
                 <CountUp
                   start={0}
                   end={21}
                   duration={4}
-                  // formattingFn={(val) => `${Math.floor(val / 1000)}k`}
                 />
                 k
                 <span>+</span>
               </h1>
-              <p  className="min-w-[8rem] min-h-8 ">
-
-                <TypeAnimation
-                  key={key}
-                  sequence={["Lives Changed", 1000, ""]}
-                  speed={200}
-                  repeat={Infinity}
-                  cursor={false}
-                />
+              <p className="min-w-[8rem] min-h-8">
+                {livesChangedInView && (
+                  <TypeAnimation
+                    sequence={["Lives Changed", 1000, ""]}
+                    speed={200}
+                    repeat={0}
+                    cursor={false}
+                  />
+                )}
               </p>
               <img src={user} alt="" />
             </div>
           </div>
         </div>
-        {/* <div className="washpark"><LazyLoadImage effect = 'blur' height = "100%" src={homepagecrop} alt=""  className="w-full h-full"/></div> */}
       </div>
     </div>
   );

@@ -43,7 +43,24 @@ const Journey = () => {
       .to(".booking", { rotate: -45, duration: .5, ease: "power2.inOut" }) // Rotate left by 45 degrees
       .to(".booking", { rotate: 45, duration: .5, ease: "power2.inOut" }) // Rotate right by 45 degrees
       .to(".booking", { scale: 1, duration: 1, ease: "power2.inOut" }); // Zoom out
-  }, []);
+  }, 
+  
+  useEffect(() => {
+    const tl = gsap.timeline({ repeat: -1, yoyo: true });
+
+    tl.from( ".support", {
+      scale: 1.1,
+      duration: 1,
+      ease: "bounce.out",
+    })
+
+    .to(".support", {
+      scale: 1.7,
+      duration: 1,
+      ease: "bounce.inOut"
+    });
+  }),
+  []);
 
   return (
     <div className="journey-container">
@@ -69,7 +86,7 @@ const Journey = () => {
           </div>
           <div className="icon-prop">
             <div className="icon">
-              <img src={support} alt="" />
+              <img className="support" src={support} alt="" />
             </div>
             <h3>Support when you need it</h3>
             <p>
