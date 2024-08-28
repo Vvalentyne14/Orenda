@@ -64,15 +64,6 @@ const PrivacyPolicy = () => {
               may affect the availability or quality use of our services.
             </p>
           </div>
-{/* 
-          <div className="privacy-text">
-            <h3>International Data Transfer:</h3>
-            <p>
-              As a Telehealth provider, we may transfer information across
-              borders for processing or storage. We ensure all data transfers
-              comply with international privacy standards and regulations.
-            </p>
-          </div>  */}
 
           <div className="privacy-text">
             <h3>Cookies and Website Usage:</h3>
@@ -172,6 +163,8 @@ const PrivacyPolicy = () => {
         </div>
       </div>
     </div>
+
+
   );
 };
 

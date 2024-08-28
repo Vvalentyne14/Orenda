@@ -62,6 +62,43 @@ const Journey = () => {
   }),
   []);
 
+  useEffect(() => {
+
+    let mm = gsap.matchMedia();
+        //This is the service page for screen size of 999px and below
+        mm.add("(max-width: 450px)", () => {
+            const locations = gsap.utils.toArray(".icon-prop");
+            locations.forEach(iconProp => {
+                gsap.to(iconProp, {
+                    y:0,
+                    opacity: 1,
+                    scrollTrigger:{
+                        trigger:iconProp,
+                        start: "top 70%",
+                    }
+                })
+            })
+        });
+
+        mm.add("(min-width: 451px)", () => {
+          let tlthree = gsap.timeline({
+              scrollTrigger: {
+                  trigger: '.icon-prop',
+                  start:"top 80%"
+              }
+          })
+          tlthree.to('.icon-cards', {y:0, stagger: 1.2, ease:"back", opacity: 1, delay: 1})
+
+          gsap.to('.icon-prop', {y:0, stagger: .4,ease:"back", opacity: 1, delay: .3,
+              scrollTrigger:{
+                  trigger:".icon-prop",
+                  start:"top 80%"
+              }
+          })
+      });    
+
+  }) 
+
   return (
     <div className="journey-container">
       <div className="journey-wrapper">

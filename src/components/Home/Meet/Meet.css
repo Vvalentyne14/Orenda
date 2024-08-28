@@ -51,6 +51,7 @@ font-family: "open sans";
   cursor: pointer;
   z-index: 1;
   overflow: hidden;
+  transition: all .5s ease-in-out;
 }
 
 .btn-meet-effect::before {
@@ -62,7 +63,7 @@ width: 0%;
 height: 100%;
 z-index: -1;
 border-radius: 30px;
-transition: width .3s ease-in-out;
+transition: all .5s ease-in-out;
 position: absolute;
 }
 

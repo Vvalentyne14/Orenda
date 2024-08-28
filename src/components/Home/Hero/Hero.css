@@ -86,6 +86,7 @@ position: relative;
  outline: none;
  z-index: 1;
  margin-bottom: 1.9rem;
+ transition: all .5s ease-in-out;
   overflow: hidden;
 }
 .btn-effect::before {
@@ -96,7 +97,7 @@ width: 0%;
 height: 100%;
 z-index: -1;
 border-radius: 20px;
-transition: width .3s ease-in-out;
+transition: all .5s ease-in-out;
 position: absolute;
 }
 .btn-effect:hover{

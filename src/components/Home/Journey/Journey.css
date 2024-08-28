@@ -43,6 +43,8 @@
   width: 270px;
   justify-content: space-between;
   gap: 1em;
+  opacity: 0;
+  transform: translateY(100%);
 }
 .icon {
   display: flex;
