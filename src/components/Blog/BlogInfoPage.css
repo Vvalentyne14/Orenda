@@ -1,0 +1,185 @@
+/* General Page Styles */
+.bloginfo-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0 auto;
+    width: 96%;
+    padding-top: 1.8rem;
+  }
+
+  
+  
+  /* Hero Section */
+  .hero-section {
+    background: url("../../assets/orend.jpg") no-repeat center center/cover;
+    color: white;
+    padding: 4rem;
+    padding-bottom: 50vh; /* This will increase the height of the image */
+    position: relative;
+    border-radius: 20px;  /* Add a slight border radius */
+    overflow: hidden;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 0, 0, 0.6);
+    border-radius: 20px; /* add border radius to the pseudo-element */
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+    top: 15rem; /* Adjust the value to your liking */
+    width: 60%;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-meta .tag {
+    background: transparent;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    border: 1px solid white;
+    margin-right: 0.9rem;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .read-time {
+    font-size: 0.9rem;
+    background: transparent;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    border: 1px solid white;
+    margin-right: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* .tiny-boxes {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px #000;
+  } */
+  
+  
+  /* Main Content Flex Layout */
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 4rem;
+    width: 100%;
+  }
+  .main-content .p::first-letter {
+    font-size: 4em;
+    line-height: .9em;
+    float: left;
+    margin-right: 0.1em;
+  }
+
+  .content-container {
+    width: 57%;
+  }
+  
+  .left-section {
+    flex: 2;
+  }
+  
+  .orend {
+    border-radius: 15px;
+    margin: 2rem 0 2rem 0;
+    width: 690px;
+    height: 350px;
+  }
+  .pen {
+    position: absolute;
+    float: inline-end;
+    right: 10px;
+    bottom: 45px;
+    width: 190px;
+    margin: 0.6rem;
+  }
+
+
+
+
+  /* Author Info and Sticky Note */
+  .author-sticky-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 33%;;
+  }
+  
+  .author-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .sticky-note {
+    background: #fffbea;
+    padding: 1rem;
+    border: 1px solid #f7e1a1;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    border-radius: 5px;
+    max-width: 450px;
+    padding: 2rem;
+  }
+  .emojicon {
+    float: left;
+    width: 190px;
+    margin: 0.6rem;
+  }
+  
+  .stick {
+    float: inline-end;
+  }
+
+
+  .right-section {
+    flex: 1;
+  }
+  
+  .poll-section {
+    background: url("../../assets/logo-circle.png") repeat ;
+    border-radius: 15px;
+    color: #fff;
+  }
+  
+  .poll-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+  }
+  
+  .poll-checkbox:checked {
+    background-color: #aca5be;
+    border: 2px solid #fff;
+  }
+  

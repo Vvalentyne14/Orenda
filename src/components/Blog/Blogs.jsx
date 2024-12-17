@@ -8,9 +8,11 @@ import telepsych from "../../assets/telepsych.png"
 import bloginfoframe from "../../assets/bloginfoframe.png";
 
 
+
   const blogs = [
-    // (The array of blog objects remains the same)
+   
     {
+      background: "",
       title: "Understanding Anxiety Disorders",
       date: "30 February 2024",
       category: "Topic A",
@@ -278,6 +280,8 @@ const Blog = () => {
             </button>
           </div>
         </div>
+
+
         <div
         
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-8">

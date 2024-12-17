@@ -1,23 +1,29 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { blogs } from "./Blogs";
+import "./BlogInfoPage.css";
+import stick from "../../assets/stick.png";
+import kimberly from "../../assets/kimberly.png";
+import oren from "../../assets/oren.jpg";
+import emojicon from "../../assets/emojicon.png";
+import pen from "../../assets/pen.png";
+
 import divarrleft from "../../assets/divarrleft.png";
 import divarr from "../../assets/divarr.png";
-import "./Blogs.css";
-import profile from "../../assets/profile.png";
-import x from "../../assets/X.png";
-import LinkedIn from "../../assets/LinkedIn.png";
-import facebook from "../../assets/Facebook.png";
-import Messages from "../../assets/Messages.png";
-
+// import "./Blogs.css";
+// import profile from "../../assets/profile.png";
+// import x from "../../assets/X.png";
+// import LinkedIn from "../../assets/LinkedIn.png";
+// import facebook from "../../assets/Facebook.png";
+// import Messages from "../../assets/Messages.png";
 
 const Bloginfo = () => {
-  const {title} = useParams()
-  const blog = blogs.find(blog => blog.title === title)
-  
+  const { title } = useParams();
+  const blog = blogs.find((blog) => blog.title === title);
+
   return (
-    <div>
-      <div className="max-w-[1215px] mx-auto p-6 bg-white flex flex-col gap-2">
+    <div className="bloginfo-page">
+      {/* <div className="max-w-[1215px] mx-auto p-6 bg-white flex flex-col gap-2">
         <h4 className="flex items-center justify-center font-dm-sans text-[#757575]">
           <span>Home / Blog / {blog.title}</span>
         </h4>
@@ -103,7 +109,198 @@ const Bloginfo = () => {
             Contact Us
           </button>
         </div>
-      </div>
+      </div> */}
+
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="hero-content">
+          <h1 className="font-heading">WHEN HOLIDAYS BRING STRESS</h1>
+          <p className="w-[75%] font-dm-sans">
+            Understanding how stress relates to holiday seasons and practical
+            tips to make the most of the season without losing our
+            minds in the process.
+          </p>
+          <div className="hero-meta pt-5 font-dm-sans">
+            <span className="tag text-[0.8rem]">Holidays</span>
+            <span className="tag text-[0.8rem]">Anxiety</span>
+            <span className="read-time text-[0.8rem]">4 min read</span>
+          </div>
+        </div>
+        {/* Tiny Boxes */}
+        {/* <div className="tiny-boxes"></div> */}
+      </section>
+
+      {/* Main Content Section */}
+      <section className="main-content">
+        <div className="content-container">
+          {/* Left Section */}
+          <div className="left-section">
+            <p className="p font-dm-sans">
+              The holiday season is often portrayed as a time of joy,
+              togetherness, and celebration. Yet, for many, it brings stress,
+              anxiety, and even sadness. If the holidays leave you feeling more
+              frazzled than festive, you’re not alone. Studies show that{" "}
+              <span className="font-bold">38%</span> of people report increased
+              stress during the holiday season, citing financial strain, family
+              dynamics, and time pressure as major contributors (
+              <span className="font-semibold text-blue-900">
+                <a href="https://www.apa.org">
+                  American Psychological Association, 2022
+                </a>
+              </span>
+              ).
+            </p>
+
+            <br />
+
+            <blockquote className="font-dm-sans">
+              But don’t worry—there are ways to navigate these challenges and
+              rediscover the magic of the season. Let’s unpack why the holidays
+              can be stressful and explore some practical strategies to help you
+              manage your mental health during this time.
+            </blockquote>
+
+            <div className="font-bold font-heading text-[2rem] pt-10">
+              <h1>Now, why exactly do holidays bring stress?</h1>
+              <img src={oren} alt="" className="orend" />
+            </div>
+
+            <div>
+              <li className="font-heading text-[1.2rem] py-5">
+                Financial Strain
+              </li>
+              <p className="font-dm-sans px-8">
+                Gift-giving, parties, and year-end expenses can quickly pile up.
+                According to a 2022 survey by Bankrate, 41% of Americans feel
+                financially stressed during the holidays. The pressure to meet
+                expectations can lead to overspending and lingering debt.
+              </p>
+              <li className="font-heading text-[1.2rem] py-5">
+                Family Expectations
+              </li>
+              <p className="font-dm-sans px-8">
+                Holiday gatherings often come with high expectations. Unresolved
+                conflicts, managing different personalities, or simply hosting
+                can feel overwhelming. The pressure to create a "perfect"
+                holiday experience adds to the tension.
+              </p>
+              <li className="font-heading text-[1.2rem] py-5">
+                Grief and Loss
+              </li>
+              <p className="font-dm-sans px-8">
+                For those who’ve lost loved ones, the holidays can intensify
+                feelings of sadness and grief. Empty seats at the table or
+                cherished traditions that now feel hollow can be especially
+                challenging.
+              </p>
+              <li className="font-heading text-[1.2rem] py-5">
+                Social Pressure
+              </li>
+              <p className="font-dm-sans px-8">
+                The portrayal of idealized holidays on social media can make us
+                feel inadequate. Comparing ourselves to others’ curated lives
+                often leads to stress, loneliness, or self-doubt.
+              </p>
+            </div>
+          </div>
+
+          {/* Right Section */}
+          <div className="right-section">
+            {/* Poll Section */}
+            <div className="poll-section relative bg-orenda-purple bg-logo bg-repeat-round bg-center py-4 bg-fixed bg-[lenght:100px] sm:bg-[lenght:150px] mt-8 flex flex-col">
+              <div className="w-[80%] flex flex-col p-8">
+                <h2 className="font-heading font-bold text-[2rem] text-[#fff]">
+                  What stresses you out the most during the holidays?
+                </h2>
+                <label className="py-2 font-dm-sans">
+                  <input type="checkbox" className="poll-checkbox" /> Gift
+                  shopping
+                </label>
+                <label className="py-2 font-dm-sans">
+                  <input type="checkbox" className="poll-checkbox" /> Financial
+                  pressure
+                </label>
+                <label className="py-2 font-dm-sans">
+                  <input type="checkbox" className="poll-checkbox" /> Lack of
+                  time
+                </label>
+                <label className="py-2 font-dm-sans">
+                  <input type="checkbox" className="poll-checkbox" /> Family
+                  dynamics
+                </label>
+                <label className="py-2 font-dm-sans">
+                  <input type="checkbox" className="poll-checkbox" /> Grief
+                </label>
+                <img src={pen} alt="" className="pen"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Author Info & Sticky Note Section */}
+        <div className="author-sticky-section">
+          {/* <div className="font-dm-sans flex flex-col font-bold pl-8 pb-4 pt-4">
+            <a href=""></a>
+            <a href="">(worrk on me)</a>
+            <a href="">(worrk on me)</a>
+            <a href="">(worrk on me)</a>
+          </div> */}
+
+          <hr className="mt-8 mb-8 w-[100%]" />
+
+          <div className="flex flex-col">
+            <p className="font-dm-sans text-[0.8rem] font-bold">written by:</p>
+            <div className="author-info pb-4">
+              <img src={kimberly} alt="Author" className="author-image" />
+              <div className="author-details">
+                <h4 className="font-heading">Kimberly Levitt</h4>
+                <p className="font-bold font-dm-sans">PMHNP-BC</p>
+              </div>
+            </div>
+          </div>
+
+          <hr className="mt-8 mb-8 w-[100%]" />
+
+          <div className="bg-[#ecf5eb] p-8">
+            <h2 className="font-heading text-[2rem] pb-4">
+              Feeling overwhelmed{" "}
+              <span className="font-extrabold font-heading">?</span>
+            </h2>
+            <p className="font-extralight">
+              Don’t hesitate to reach out.{" "}
+              <span className="font-semibold">
+                Schedule a session with Orenda Psychiatry today
+              </span>{" "}
+              and take the first step toward a stress-free holiday season.
+            </p>
+            <div>
+              <img
+                src={stick}
+                alt=""
+                style={{ width: 200 }}
+                className="stick"
+              />
+            </div>
+          </div>
+
+          <hr className="mt-8 mb-8 w-[100%]" />
+
+          {/* Sticky Note Section */}
+          <div className="sticky-note">
+            <div>
+              <img src={emojicon} alt="" className="emojicon" />
+            </div>
+            <div>
+              <h4 className="font-heading text-[1.5rem]">Quick Tips!</h4>
+              <p className="font-dm-sans">
+                - It is the season, and society sometimes poses some unrealistic
+                expectations. Be kind to yourself and remember that it’s okay to
+                take a step back. .
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
