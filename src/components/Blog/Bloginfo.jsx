@@ -7,6 +7,7 @@ import kimberly from "../../assets/kimberly.png";
 import oren from "../../assets/oren.jpg";
 import emojicon from "../../assets/emojicon.png";
 import pen from "../../assets/pen.png";
+// import orenda from "../../assets/orenda.png";
 
 import divarrleft from "../../assets/divarrleft.png";
 import divarr from "../../assets/divarr.png";
@@ -202,7 +203,16 @@ const Bloginfo = () => {
                 often leads to stress, loneliness, or self-doubt.
               </p>
             </div>
+
+            <div>
+
+            </div>
           </div>
+
+
+
+
+
 
           {/* Right Section */}
           <div className="right-section">
@@ -231,7 +241,63 @@ const Bloginfo = () => {
                 <label className="py-2 font-dm-sans">
                   <input type="checkbox" className="poll-checkbox" /> Grief
                 </label>
-                <img src={pen} alt="" className="pen"/>
+                <img src={pen} alt="" className="pen" />
+              </div>
+            </div>
+          </div>
+
+          <div className=" p-4 my-8 w-[95%]">
+            <div>
+              <h1 className="font-heading text-[1.8rem] py-4">Practical Tips to Manage Holiday Stress</h1>
+              <p className="font-bold">
+                Here are some effective strategies to help you stay grounded and
+                make the most of the season:
+              </p>
+              <div className="list-decimal">
+                <li className="font-heading  text-[1.2rem] py-5">
+                  Set Realistic Expectations
+                </li>
+                <p className="font-dm-sans px-8">
+                  Not every moment has to be perfect. Focus on what truly
+                  matters to you and let go of the need to meet everyone’s
+                  expectations. Remember, your presence is more valuable than
+                  the presents.
+                </p>
+                <li className="font-heading text-[1.2rem] py-5">Stay Active</li>
+                <p className="font-dm-sans px-8">
+                  Physical activity is a natural stress reliever. Go for a brisk
+                  walk, try a holiday-themed workout, or even dance to your
+                  favorite festive tunes. Exercise boosts endorphins and helps
+                  counteract the effects of stress.
+                </p>
+                <li className="font-heading text-[1.2rem] py-5">
+                  {" "}
+                  Create a Budget
+                </li>
+                <p className="font-dm-sans px-8">
+                  Plan your holiday spending in advance. Allocate specific
+                  amounts for gifts, decorations, and events—and stick to it.
+                  Homemade gifts or shared experiences can be just as meaningful
+                  as expensive items.
+                </p>
+                <li className="font-heading text-[1.2rem] py-5">
+                  Set Boundaries
+                </li>
+                <p className="font-dm-sans px-8">
+                  It’s okay to say no. Whether it’s declining an invitation or
+                  setting limits on how much you take on, protecting your time
+                  and energy is essential.
+                </p>
+                <li className="font-heading text-[1.2rem] py-5">
+                  {" "}
+                  Seek Support
+                </li>
+                <p className="font-dm-sans px-8">
+                  If feelings of stress or sadness become overwhelming, reach
+                  out. Talk to a trusted friend, family member, or mental health
+                  professional. Sometimes, sharing your thoughts can provide
+                  relief and perspective.
+                </p>
               </div>
             </div>
           </div>
@@ -291,7 +357,9 @@ const Bloginfo = () => {
               <img src={emojicon} alt="" className="emojicon" />
             </div>
             <div>
-              <h4 className="font-heading text-[1.5rem]">Quick Tips!</h4>
+              <h4 className="font-heading text-[1.5rem] underline">
+                Quick Tip!
+              </h4>
               <p className="font-dm-sans">
                 - It is the season, and society sometimes poses some unrealistic
                 expectations. Be kind to yourself and remember that it’s okay to
