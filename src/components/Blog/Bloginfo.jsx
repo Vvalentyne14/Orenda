@@ -323,17 +323,21 @@ const Bloginfo = () => {
           </div>
 
 
-          <div>
-            <h1>When to Seek Help</h1>
-            <p>If holiday stress is something you deal with, it may be time to seek professional help. Signs to watch for include:</p>
-            <div>
+          <div className="p-4">
+            <h1 className="font-heading text-[1.6rem]">When to Seek Help</h1>
+            <p className="font-dm-sans">If holiday stress is something you deal with, it may be time to seek professional help. Signs to watch for include:</p>
+            <div className="p-6 font-dm-sans">
               <li>Persistent feelings of sadness or hopelessness.</li>
               <li>Difficulty sleeping or changes in appetite.</li>
               <li>Lack of interest in activities you usually enjoy.</li>
               <li>Trouble concentrating or making decisions.</li>
             </div>
-            <p>At Orenda Psychiatry, we’re here to support you. Our compassionate providers can help you navigate the complexities of the holiday season with tailored strategies and care.
+            <p className="font-dm-sans">At Orenda Psychiatry, we’re here to support you. Our compassionate providers can help you navigate the complexities of the holiday season with tailored strategies and care.
             </p>
+          </div>
+
+          <div className="bg-orenda-purple text-[1rem] italic flex justify-center text-center text-white p-4 border rounded-md my-8">
+            <p>It is YOUR holiday, so make it YOURS.</p>
           </div>
         </div>
 
