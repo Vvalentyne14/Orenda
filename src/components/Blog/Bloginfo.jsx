@@ -7,7 +7,9 @@ import kimberly from "../../assets/kimberly.png";
 import oren from "../../assets/oren.jpg";
 import emojicon from "../../assets/emojicon.png";
 import pen from "../../assets/pen.png";
-// import orenda from "../../assets/orenda.png";
+import orenda from "../../assets/orenda.jpg";
+import idea from "../../assets/idea.png";
+import chrismas from "../../assets/chrismas.jpg";
 
 import divarrleft from "../../assets/divarrleft.png";
 import divarr from "../../assets/divarr.png";
@@ -203,18 +205,8 @@ const Bloginfo = () => {
                 often leads to stress, loneliness, or self-doubt.
               </p>
             </div>
-
-            <div>
-
-            </div>
           </div>
 
-
-
-
-
-
-          {/* Right Section */}
           <div className="right-section">
             {/* Poll Section */}
             <div className="poll-section relative bg-orenda-purple bg-logo bg-repeat-round bg-center py-4 bg-fixed bg-[lenght:100px] sm:bg-[lenght:150px] mt-8 flex flex-col">
@@ -248,7 +240,9 @@ const Bloginfo = () => {
 
           <div className=" p-4 my-8 w-[95%]">
             <div>
-              <h1 className="font-heading text-[1.8rem] py-4">Practical Tips to Manage Holiday Stress</h1>
+              <h1 className="font-heading text-[1.8rem] py-4">
+                Practical Tips to Manage Holiday Stress
+              </h1>
               <p className="font-bold">
                 Here are some effective strategies to help you stay grounded and
                 make the most of the season:
@@ -301,43 +295,71 @@ const Bloginfo = () => {
               </div>
             </div>
           </div>
+
+          <div className="p-4">
+            <div className="relative">
+              <p className="flex font-bold">
+                Orenda Tip <img src={idea} alt="" className="w-8" />
+              </p>
+            </div>
+            <div className="p-6">
+              <h1 className="font-heading text-[1.6rem]">
+                Fun Ways to Infuse Joy into Your Holidays
+              </h1>
+              <img src={chrismas} alt="" className="h-[20rem] rounded-lg m-6" />
+
+              <div>
+                <li className="font-heading text-[1.2rem] py-5">Start a New Tradition</li>
+                <p className="font-dm-sans px-8">Feeling weighed down by old routines? Create a new tradition that brings you joy—like a movie night, baking cookies with friends, or volunteering at a local shelter.
+                </p>
+
+                <li className="font-heading text-[1.2rem] py-5"> Create a “Joy Jar”</li>
+                <p className="font-dm-sans px-8">Write down small moments of happiness throughout the season and add them to a jar. At the end of the holidays, read them to reflect on the positive highlights.</p>
+
+                <li className="font-heading text-[1.2rem] py-5"> Unplug from Technology</li>
+                <p className="font-dm-sans px-8">Take a break from social media and screens. Engage in activities like board games, crafting, or storytelling to foster meaningful connections with loved ones.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div>
+            <h1>When to Seek Help</h1>
+            <p>If holiday stress is something you deal with, it may be time to seek professional help. Signs to watch for include:</p>
+            <div>
+              <li>Persistent feelings of sadness or hopelessness.</li>
+              <li>Difficulty sleeping or changes in appetite.</li>
+              <li>Lack of interest in activities you usually enjoy.</li>
+              <li>Trouble concentrating or making decisions.</li>
+            </div>
+            <p>At Orenda Psychiatry, we’re here to support you. Our compassionate providers can help you navigate the complexities of the holiday season with tailored strategies and care.
+            </p>
+          </div>
         </div>
 
         {/* Author Info & Sticky Note Section */}
         <div className="author-sticky-section">
-          {/* <div className="font-dm-sans flex flex-col font-bold pl-8 pb-4 pt-4">
-            <a href=""></a>
-            <a href="">(worrk on me)</a>
-            <a href="">(worrk on me)</a>
-            <a href="">(worrk on me)</a>
-          </div> */}
-
-          <hr className="mt-8 mb-8 w-[100%]" />
-
           <div className="flex flex-col">
-            <p className="font-dm-sans text-[0.8rem] font-bold">written by:</p>
             <div className="author-info pb-4">
               <img src={kimberly} alt="Author" className="author-image" />
               <div className="author-details">
                 <h4 className="font-heading">Kimberly Levitt</h4>
-                <p className="font-bold font-dm-sans">PMHNP-BC</p>
+                <p className="font-dm-sans text-[.8rem]">PMHNP-BC</p>
               </div>
             </div>
           </div>
 
           <hr className="mt-8 mb-8 w-[100%]" />
 
-          <div className="bg-[#ecf5eb] p-8">
-            <h2 className="font-heading text-[2rem] pb-4">
+          <div className="bg-[#ecf5eb] p-8 border rounded-md">
+            <h2 className="font-heading text-[1.5rem] pb-4">
               Feeling overwhelmed{" "}
               <span className="font-extrabold font-heading">?</span>
             </h2>
             <p className="font-extralight">
-              Don’t hesitate to reach out.{" "}
-              <span className="font-semibold">
-                Schedule a session with Orenda Psychiatry today
-              </span>{" "}
-              and take the first step toward a stress-free holiday season.
+              Don’t hesitate to reach out. Schedule a session with Orenda
+              Psychiatry today and take the first step toward a stress-free
+              holiday season.
             </p>
             <div>
               <img
@@ -352,14 +374,12 @@ const Bloginfo = () => {
           <hr className="mt-8 mb-8 w-[100%]" />
 
           {/* Sticky Note Section */}
-          <div className="sticky-note">
+          <div className="sticky-note bg-orenda-purple text-white">
             <div>
-              <img src={emojicon} alt="" className="emojicon" />
+              {/* <img src={emojicon} alt="" className="emojicon" /> */}
             </div>
             <div>
-              <h4 className="font-heading text-[1.5rem] underline">
-                Quick Tip!
-              </h4>
+              <h4 className="font-heading text-[1.5rem] underline"></h4>
               <p className="font-dm-sans">
                 - It is the season, and society sometimes poses some unrealistic
                 expectations. Be kind to yourself and remember that it’s okay to
