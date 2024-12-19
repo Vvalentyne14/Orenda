@@ -336,7 +336,7 @@ const Bloginfo = () => {
             </p>
           </div>
 
-          <div className="bg-orenda-purple text-[1rem] italic flex justify-center text-center text-white p-4 border rounded-md my-8">
+          <div className="bg-orenda-purple text-[1rem] italic flex justify-center text-center text-white p-4 border rounded-md my-8 final">
             <p>It is YOUR holiday, so make it YOURS.</p>
           </div>
         </div>
