@@ -119,9 +119,7 @@ const Bloginfo = () => {
         <div className="hero-content">
           <h1 className="font-heading">WHEN HOLIDAYS BRING STRESS</h1>
           <p className="w-[75%] font-dm-sans">
-            Understanding how stress relates to holiday seasons and practical
-            tips to make the most of the season without losing our
-            minds in the process.
+            Understanding how stress relates to holiday seasons and practical tips to make the most of the season without losing our minds in the process.
           </p>
           <div className="hero-meta pt-5 font-dm-sans">
             <span className="tag text-[0.8rem]">Holidays</span>

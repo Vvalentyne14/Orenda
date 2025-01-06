@@ -143,6 +143,11 @@
     height: 50px;
     border-radius: 50%;
   }
+
+  .stick {
+    justify-self: center;
+    display: flex;
+  }
   
   .sticky-note {
     padding: 1rem;
@@ -158,9 +163,6 @@
     margin: 0.6rem;
   }
   
-  .stick {
-    float: inline-end;
-  }
 
 
   .right-section {
